@@ -1,0 +1,10 @@
+var path = window.location.origin;
+var APIPATH = path + "/scan-shipping/";
+var SERVERROOTPATH = path+"/s3w/detail/";
+var SERVERROOTPATH = path + "/scan-shipping/";
+var NEWSAPI = 'http://achavare.mumwwwalpha.shipco.com/';
+var APIKEY = '48d38e5dec37513a254d203939f893f2';
+var HTTPPATH  = "https://staging.www.shipco.com";
+var LOCATIONWEBSERVICESERVER = 'http://rsawant.mumwwwalpha.shipco.com';
+var LOCATIONWEBSERVICESERVER = 'https://staging.www.shipco.com';
+var LOCATIONWEBSERVICEACCESSTOKEN = '2NvY5Ovcx9XY1+jfzMg=';

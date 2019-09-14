@@ -1,0 +1,253 @@
+  #exTab1 .tab-content {
+  color : white;
+
+  padding :0px;
+}
+
+.login-btn:hover{
+ color: #d43f3a!important;
+    border-color: #d43f3a !important;
+}
+
+
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+.nav-pills{
+  margin-left: -13px;
+}
+
+
+#product-tab.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+   background-color: #E6E6E6;
+    width: 115px;
+    text-align: center;
+    padding: 5px 0px;
+    font-weight: 600;
+    color: #df0121 !important;
+    font-size: 20px;
+}
+
+#product-tab.nav>li>a {
+  background-color: transparent;
+    width: 83px;
+    text-align: center;
+    padding: 8px 0px;
+    font-weight: 600;
+    color: #df0121 !important;
+    font-size: 20px;
+    color: #212121 !important;
+}
+
+  .popup-img{
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 47px 0px 20px 0px;
+  }
+
+  .popup-img-txt{
+    text-align: center;
+    font-weight: 500;
+    color: #000;
+  }
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 999;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 10px 20px 20px 20px;
+      background: #F7F7F7;
+    border-radius: 0px;
+     width: 45%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  top: 80px;
+}
+.popup-border{
+      border-right: 1.2px solid #a19c9c !important;
+}
+
+.popup-forgot{
+  padding-top: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 0px;
+        font-weight: 500;
+}
+.font-13{
+  font-size: 13px !important;
+}
+
+
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .popup-btn{
+  color: #f6f6f6;
+    background-color: #DF0121;
+    border-color: #DF0121;
+    font-weight: 600;
+    border-radius: 16px;
+    padding: 5px 32px;
+}
+.popup label {
+  color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+  }
+   .popup .form-control{
+    height: 29px;
+    margin-left: -1px;
+         width: 22%;
+  }
+
+  .popup-close {
+    float: right;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    color: #ac3838;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+     opacity: 0.9; 
+    border: 1px solid #ac3838;
+    padding: 1px 5px;
+    border-radius: 23px;
+}
+
+
+input[type=checkbox], input[type=radio] {
+    
+    width: 13px;
+    /* margin-top: -18px; */
+    position: absolute !important;
+    top: -8px;
+}
+#popup1.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+  }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+  .popup .form-control {
+    height: 29px;
+    margin-left: -1px;
+    width: 19%;
+}
+#product-tab.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    width: 80px;
+  }
+  .popup-img {
+    padding: 60px 0px 20px 0px;
+}
+}
+
+@media (min-width: 1920px) and (max-width: 2560px)  {
+  .popup .form-control {
+   width: 30%;
+   height: 37px;
+}
+.popup {
+   padding: 20px 20px 30px 20px;
+   width: 40%;
+}
+.popup-img {
+    width: 57%;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+ 
+  .popup{
+    width: 90%;
+  }
+  .popup .form-control {
+    height: 25px;
+    width: 98%;
+}
+#product-tab.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  width: 62px;
+  font-size: 13px;
+}
+#product-tab.nav>li>a {
+   width: 62px;
+  font-size: 13px;
+}
+.popup .popup-btn {
+   padding: 2px 27px;
+   font-size: 13px;
+}
+#popup1 .form-group {
+    margin-bottom: 0px;
+}
+#popup1 .popup label {
+    color: #212121;
+    font-size: 11px !important;
+}
+.popup-img-txt {
+    font-size: 11px;
+}
+.popup-forgot {
+    padding-top: 10px;
+    font-size: 8px;
+    }
+.popup-img {
+    padding: 40px 0px 20px 0px;
+}
+
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #popup1{
+    z-index: 999;
+  }
+}

@@ -1,0 +1,55 @@
+@media (min-width: 1920px) and (max-width: 2560px)  {
+
+
+  .bg-black {
+    height: 550px; 
+   }
+
+   .verticals-dropdown {
+      right: 427px !important;
+      }
+    .product-dropdown{right: 287px;}
+
+    .slider-btn {
+     margin-top: 5.7%;
+}
+
+.carousel-showmanymoveone .carousel-control.left {
+    margin-left: 5px;
+    top: 36%;
+}
+
+.carousel-showmanymoveone .carousel-control.right {
+    margin-right: -48px;
+    top: 36%;
+}
+.banner-btn {
+    margin-top: 3.2%;
+}
+.overlay {
+   
+   top: 56px;
+    bottom: 0;
+    left: 7px;
+    right: -6px;
+    height: 87%;
+    width: 98%;
+  
+}
+.project-1 {
+    height: 779px;
+}
+/*.product-dropdown {
+    display: inline-flex;
+    position: absolute;
+    left: auto;
+    right: 435px !important;
+    top: 110px;
+}*/
+#myCarousel .carousel-indicators {
+    bottom: 36px;
+}
+.project-video{
+  width: 879px;
+}
+}

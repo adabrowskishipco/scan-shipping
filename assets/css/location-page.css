@@ -1,0 +1,75 @@
+.loc-text{
+	font-size: 17px;
+    color: #000;
+    font-weight: 400;
+    line-height: 26px;
+}
+.loc-add p{
+	font-size: 17px;
+    color: #000;
+    line-height: 23px;
+    font-weight: 400;
+}
+.loc-add{padding-top: 15px;}
+.location-title{
+	font-weight: 700;
+    color: #ED1B2E;
+    padding-bottom: 10px;
+    margin-top: -20px;
+    font-size: 50px;
+    
+}
+.loc-back{
+	float: right;
+    color: #000000;
+    font-size: 15px;
+ /*   padding-top: 40px;*/
+    text-decoration: underline;
+}
+.pr-149{
+	padding-right: 149px;
+}
+.pl-88{
+	padding-left: 88px;
+}
+.plr-70{
+padding: 0px 70px 0px 44px;
+}
+.mt-20{
+	margin-top: -20px !important;
+}
+.pt-67{
+	padding-top: 44px;
+}
+.Sweden-add{
+	line-height: 16px;
+
+}
+.pt-22{
+	padding-top: 22px;
+}
+.pt-32{
+	padding-top: 32px;
+}
+.pr-139{
+    padding-right: 139px;
+}
+
+
+
+ @media (max-width:768px) {
+
+.location-title{
+ font-size: 31px;
+}
+.loc-back {margin-top: -10px;}
+
+ 
+ .res-font-13   
+{
+    font-size: 13px;
+}
+.res-pt-22{
+    padding-top: 32px !important;
+}
+}

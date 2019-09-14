@@ -1,0 +1,66 @@
+ #fade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+.popup-title{
+   font-size: 17px;
+   color: #000;
+    font-weight: 500;
+}
+
+.case-study-video{
+  padding: 5px 50px 45px 50px;
+
+}
+
+#light {
+  display: none;
+  position: fixed;
+  top: 45%;
+  left: 27%;
+ /* max-width: 600px;
+  max-height: 360px;*/
+  margin-left: -300px;
+  margin-top: -180px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  z-index: 1002;
+  overflow: visible;
+  border: 1px solid #000000;
+  background-color: #F7F7F7;
+}
+
+#boxclose {
+  float: right;
+    cursor: pointer;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 23px;
+    display: inline-block;
+    line-height: 0px;
+    padding: 10px 4px;
+    position: absolute;
+    right: 16px;
+    top: 13px;
+    z-index: 1002;
+    opacity: 0.9;
+    border-radius: 12px;
+}
+
+.boxclose:before {
+  content: "×";
+}
+#boxclose:hover {
+  color: #000 !important;
+  text-decoration:none;
+}

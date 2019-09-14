@@ -1,0 +1,72 @@
+ .mlr-23{
+      margin-left: 23px;
+    margin-right: 23px;
+    }
+.carousel-control.left{
+ background-image:none; 
+}
+.carousel-control.right{
+  background-image:none; 
+}
+
+.left-img{
+  top: 46%;
+  position: absolute;
+  left: 13px;
+}
+.right-img{
+  position: absolute;
+    left: 174px;
+    top: 46%;
+}
+
+@media (max-width:768px) {
+
+  .left-img{
+  top: 46%;
+  position: absolute;
+  width: 14px !important;
+}
+.right-img{
+  position: absolute;
+  left: 28px !important;
+  top: 46%;
+  width: 14px !important;
+}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+.right-img {
+    position: absolute;
+    left: 128px;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2560px)  {
+.right-img {
+    position: absolute;
+    left: 261px;
+    top: 50%;
+}
+.left-img {
+    top: 50%;
+   }
+}
+
+    
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
