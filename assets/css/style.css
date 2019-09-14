@@ -625,6 +625,8 @@ font-weight: 600;
 }
 .banner-caption {
   
+/*    background: linear-gradient(rgba(0,0,0,.39), rgba(0,0,0,.39)), url("../img/ocean-fright/ocean-fright/OceanFreight_www.pexels.com-architecture-bay-boat-326410.png");
+*/
     background: linear-gradient(rgba(0,0,0,.39), rgba(0,0,0,.39)), url("../img/ocean-fright/OceanFreight_www.pexels.com-architecture-bay-boat-326410.png");
 
     background-repeat: no-repeat;
@@ -639,7 +641,7 @@ font-weight: 600;
 }
 .about-banner-caption {
   
-    background: linear-gradient(rgba(0,0,0,.39), rgba(0,0,0,.39)), url("../img/project/aboutimagebw.png");
+/**/    background: linear-gradient(rgba(0,0,0,.39), rgba(0,0,0,.39)), url("../img/about/aboutimagebw.jpg");
 
     background-repeat: no-repeat;
     background-size: cover;
