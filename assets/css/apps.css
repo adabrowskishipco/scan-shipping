@@ -42,7 +42,7 @@
 .mode-select label, .mode-select .glossary-mode-label {
     font-size: 13px;
     color: #FFFFFF;
-    font-weight: 300;
+    font-weight: 600;
 }
 .mode-select select {
     border-radius: 4px;
@@ -82,14 +82,28 @@
     font-weight: 500;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
 .table-invoice th:first-child,  .table-invoice tbody td:first-child {
     padding-left: 20px;
 }
 .table-invoice tbody td {
-    padding: 13px 0;
+       padding: 36px 0;
+   /* border: 1px solid #707070;*/
+}
+.un-table td span{
+   border: 1px solid #ccc;
+  padding: 8px 50px;
+    text-align: center;
+     margin:0px; 
+    width: 100%;
 }
 
+.un-table  { margin: 20px 0px !important;}
+
+.mr-20{
+    margin-right: 20px !important;
+}
 /*shipping-glossary.html css*/
 .mode-select input {
     font-size: 10px;
@@ -249,6 +263,7 @@
 .Calculator label{
     font-size: 10px;
     padding:0;
+
 }
 
 .Calculator .red_button2{
@@ -304,7 +319,7 @@
     padding: 0px 4px;
     margin-bottom: 20px;
     background-color: #D90404;
-    border-radius: 6px;
+    border-radius: 5px;
     box-shadow: none;
     border: 0.2px solid #707070;
     color: #fff;
@@ -334,7 +349,7 @@
 }
 .reset-btn{
     background-color: #D90404;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: none;
     border: 0.2px solid #707070;
     color: #fff;
@@ -425,6 +440,9 @@
 .mt-20{
     margin-top: -20px;
 }
+.mt19{
+    margin-top: 19px !important;
+}
 .bordr-table span{
 
 }
@@ -436,6 +454,177 @@
 .vasel-tracker th {
    padding-left: 20px; 
 }
+.black-clr{
+    color: #000;
+}
+.app-banner-caption-con{
+    background: url("../img/app/app-new/Group 2865.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;
+}
+.app-banner-caption-inco{
+    background: url("../img/app/app-new/Group 2857 (2).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;
+}
+.app-banner-caption-un-loc{
+   background: url("../img/app/app-new/Group 2864.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;  
+}
+.app-banner-caption-shipping-glo{
+   background: url("../img/app/app-new/Group 2859 (1).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;  
+}
+.app-banner-caption-emmi-cal{
+   background: url("../img/app/app-new/Group 2861.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;  
+}
+.app-banner-caption-ocien{
+   background: url("../img/app/app-new/Group 2862.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;  
+}
+.app-banner-caption-haz{
+   background: url("../img/app/app-new/Group 2863.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;  
+}
+.app-banner-caption-con-spec{
+   background:linear-gradient(rgba(0,0,0,.39), rgba(0,0,0,.39)), url("../img/app/app-new/PEXELS_cargo-containers-trailer-lot-1624695-EditedbyVH_LOGOSremoved-ConvertImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;   
+}
+.border-radius{
+    border-radius: 8px;
+}
+.p{
+    padding-top: 17px;
+    padding-left: 15px;
+    padding-bottom: 6px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.con-spec{
+    box-shadow: 0px 0px 3px 0px #707070;
+    margin: 0px 2px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.con-spec-head{
+    background-color: #454545;
+    color: #F0F0F0;
+    margin: 0px 0px;
+    font-size: 15px;
+    padding: 15px 26px 15px 19px;
+    font-weight: 500;
+    text-align: center;
+}
+.border-con-spec .col-md-3{border: 1px solid #707070;
+    padding: 8px 0px;
+    text-align: center;}
+.m-0{ margin: 0px;}
+.text-tab span{padding: 0px 15px;}
+.text-p{padding:0px 7px !important}
+.ml-8{
+    margin-left: 8px;
+}
+.plr-30{
+    padding: 0px 30px;
+}
+.em-cal tbody td{
+padding: 14px 23px !important;
+    text-align: center;
+}
+.em-cal tbody .border-em{
+    border: 1px solid #ccc;
+}
+/*#table_id{
+border-collapse: separate;
+    border-spacing: 2px;
+    text-align: center;
+}
+#table_id th{
+    text-align: center;
+}*/
+#table_id tr{
+  /* border-collapse: separate;
+    border-spacing: 2;
+    border: 1px solid #000;*/
+}
+.vasel-tracker tbody .con-tab-border{
+margin:20px !important;
+}
+.add_field_button{
+  border-radius: 10px;
+    border: 0.5px solid #D90404;
+    background: #fff;
+    color: #D90404;
+    padding: 0px 5px;
+}
+.remove-field-button{
+    border-radius: 10px;
+    border: 0.5px solid #213E86;
+    background: #fff;
+   color: #213E86;
+   padding: 0px 6px;
+   margin-top: 3px;
+    
+}
+/*.em-cal tbody .one-border td{
+border: 1px solid #707070 !important;
+}*/
+
 
 
 
@@ -443,28 +632,43 @@
 
     .res-text-left{
         text-align: left !important;
+        font-size: 25px !important;
     }
-    .mode-select {
-     padding: 16px 11px 24px 11px;
+    .res-m-0{
+        margin: 0 !important;
     }
+   
     .mode-select select {
-    width: 102px;
-    margin-left: 10px;
+    width: 100%;
+    padding-left: 2px;
+    }
+.Calculator select {
+    border-radius: 4px;
+    font-size: 10px;
+    width: 117px;
+    height: 26px;
+    border: none;
+    margin-left: 0px;
     float: right;
     margin-top: 10px;
-    }
+    margin-top: 16px;
+}
+
     .red_button2 {
-    padding: 4px 43px;
+    padding: 4px 25px;
     height: 27px;
     margin-top: 7px;
     float: left;
-    margin-left: 94px;
+   /* margin-left: 94px;*/
     border-radius: 5px;
     }
     .mode-select label, .mode-select .glossary-mode-label {
     padding-right: 4px;
         padding-top: 17px;
+        padding-bottom: 5px;
+   
     }
+     .mode-select label{padding-top: 10px!important;padding-bottom: 5px!important;}
     .res-ml-0{
         margin-left:0px !important;
     }
@@ -478,31 +682,36 @@
 .Calculator .red_button2 {
     height: 29px;
     /* align-items: center; */
-    margin-left: 42px;
+    margin-left: 65px;
 }
 .meth-txt{
-    padding: 0px 45px;
+    padding: 0px 25px;
     text-align: justify;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 .has-select select {
     width: 89.5%;
     margin-left: 14px;
+    font-size: 14px;
 }
 
 .unit-shadow input {
-    margin-left: 46px;
+    margin-left: 43px;
     margin-bottom: 15px;
-    width: 132px;
+    width: 182px;
+
     
 }
 
-.form-control {
-}
+
 .UnitConverter button {
-    font-size: 9px;
-    padding: 0px 5px;
+  font-size: 12px;
+    padding: 0px 8px;
     margin-bottom: 20px;
+    height: 30px;
+    margin-top: -5px;
 }
 .unit-shadow {
 margin-bottom: 20px;
@@ -512,8 +721,10 @@ margin-bottom: 20px;
 }
 .Dim-cal input {
     /*display: inline-block;*/
-    float: right;
-}
+    /*float: right;*/
+    margin-top: -4px;
+    width: 100%;
+   }
 .shipping-details {
 padding: 20px 20px;
 }
@@ -522,17 +733,218 @@ padding: 20px 20px;
     padding-right: 10px;
 }
 .vasel-tracker th {
-    padding:0px 10px;
+    padding:10px 10px;
 }
 .scroll{
     overflow: scroll;
 }
+.res-pl-45{
+    padding-left: 45px;
+}
+.res-disp-inline-block{
+    display: inline-flex;
+}
+.grand-total label {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 9px;
+}
+.grand-total input{
+    width: 92%;
+}
+.res-width-100{
+    width: 100%;
+}
 
 
-
-.em-cal tbody tr{
+/*.em-cal tbody tr{
   border-collapse: separate;
   border-spacing: 1px;
+}*/
+
+.res-ml-50{
+    margin-left:50px;
 }
+
+.reset-btn {
+   height: 27px;
+    margin-left: 1px;
+    margin-top: 12px;
+ }
+ .res-mt-11{
+    margin-top:-13px !important;
+ }
+ .res-mt-19{
+    margin-top: 19px !important;
+ }
+ .res-ml-34{
+    margin-left:-21px !important;
+ }
+ .un-loc-pad{
+padding: 0px 11px 47px  11px;
+ }
+ .res-ml-43{
+    margin-left: 43px;
+ }
+ .con-ves-tra-pad{
+   padding: 1px 16px 48px 16px;
+ }
+ .em-cal-pad{
+    padding: 0px 16px 13px 16px;
+ }
+ .inco-term-pad{
+       padding: 10px 16px 14px 16px;
+ }
+ .shipping-glo-pad{
+   padding: 10px 16px 15px 16px;
 }
-/*border-spacing: 15px 50px;*/
+.dim-cal-pad{
+  padding: 0px 16px 16px 16px;
+}
+.type-con{
+    padding: 0px 10px 40px 20px;
+}
+ .res-ml-61{
+        margin-left: 61px;
+ }
+ .res-text-left{
+    text-align: left;
+ }
+ .res-mt-12{
+    margin-top: 12px !important;
+ }
+ .res-wd-102{
+    width: 102px !important;
+    float: right;
+    right: 18px;
+    position: relative;
+ }
+ .res-mt-9{
+    margin-top:9px;
+ }
+ .res-pl-15{
+    padding-left: 15px;
+ }
+ .tab-back{
+    padding-bottom: 30px;
+ }
+ .UnitConverter select {
+    width: 182px;
+   }
+   .Calculator label{
+    font-size: 10px;
+    padding:0;
+    padding-top: 23px !important;
+    font-weight: 400;
+}
+.download-text a {font-size: 15px;}
+.download-text {margin-top: -43px;margin-right: 55px;}
+.align-center {display: unset;}
+.width-exw { width:unset;}
+.res-font-15{font-size:15px !important;line-height: 1.6;}
+.res-font-25{font-size: 25px !important;}
+.mode-select input { width: 89%;margin: 0px 15px;}
+.shi-glo-ml{margin-left: 17px;margin-right: 13px;}
+.UnitConverter h3 {text-align: center;}
+.unit-con{width: 34%;display: block;margin-left: auto;margin-right: auto;}
+
+.disp-flex .col .inco-img-holder {
+    border: 1px solid #707070;
+    text-align: center;
+    padding: 9px 0px;
+    min-height: 90px;
+    margin-top: 2px;
+}
+.disp-flex .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 0px;
+    padding-left: -0.5px;
+    padding-right: 1.5px;
+    min-width: 87px;
+    max-width: 87px;
+}
+.shipping-glo-pad span{
+    margin-bottom: 5px;
+
+}
+.con-spec-head {
+ font-size: 12px;
+padding: 12px 19px 13px 15px;
+}
+.res-pl-23{
+    padding-left: 23px;
+}
+.em-cal tbody td{
+padding: 14px 23px !important;
+    text-align: center;
+}
+.un-loc tbody td {
+   padding: 31px 3px;
+}
+.un-table td span {
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 0px 10px;
+     padding: 10px 11px;
+}
+
+}
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+.tab-ml-0{
+    margin:0px !important;
+}
+.tab-plr{
+    padding: 0px 50px !important;
+}
+.has-select select {
+    width: 90%;
+    margin-left: 49px;
+    padding: 10px;
+    height: 46px;
+}
+.grand-total input {
+        width: 120px;
+}
+.tab-p-50{
+padding: 50px;
+}
+.tab-back{
+   text-align: right;
+    right: 39px;
+    position: relative;
+}
+.download-text {
+    margin-right: 37px;
+}
+
+
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .table-invoice {
+     width: 100% !important;
+}
+.has-select select {
+    border: 0.5px solid #707070;
+}
+.em-cal {
+    width: 90% !important;
+}
+.UnitConverter select {
+    border: 1px solid #707070;
+}
+
+
+
+}

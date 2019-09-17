@@ -110,8 +110,8 @@
         </li>
 
         <li class="">
-         <a class="hidden-xs"href="#"><img src="../assets/img/Group 2008.png"></a>
-          <a class="visible-xs res-pt-20" href="#"><img src="../assets/img/icon/Group 3191.png"></a>
+      <a class="hidden-xs home-img mt19" href="product-and-services-landing-page.html"></a>
+        <a class="visible-xs res-pt-20" href="#"><img src="../assets/img/icon/Group 3191.png"></a>
         </li>
       </ul>
 
@@ -126,7 +126,7 @@
 <section class=" ">
   <div class="container-fluid plr-none" >
      
-     <div class="app-banner-caption res-unset res-pt-1">
+     <div class="app-banner-caption-con-spec res-unset res-pt-1">
       <div class="banner-text text-center">
           <h1>OUR APPS</h1>
           <h2>Small enough to know you.<br> Big enough to serve you!</h2>
@@ -140,10 +140,10 @@
     <div class="container-fluid ">
         <div class="container">
             <a href="#" style="color: #000;">
-                <h6 class="text-right font-15"><span style="padding-right: 5px;"><img src="../assets/img/app/left-arrow.svg"></span>back</h6>
+                <h6 class="text-right font-15"><a class="black-clr" href="../app.html"><span style="padding-right: 5px;"><img src="../assets/img/app/left-arrow.svg"></span>back</a></h6>
             </a>
             <div class="row title align-items-center">
-                <span class="disp-inline-block"><img class="img-fluid big-img" src="../assets/img/app/shipping-glossary.png"></span>
+                <span class="disp-inline-block"><img class="img-fluid big-img" src="../assets/img/app/Group 2694.png"></span>
                 <span class="disp-inline-block">
                     <h2 class="tab-font-38 tittle pl-30">Container Specification </h2>
                 </span>
@@ -152,14 +152,16 @@
 
 
               <div class="row apps-row">
-                <div class="col-lg-offset-1 col-lg-4">
-                  <img class="img-fluid" src="../assets/img/app/container/PEXELS_cargo-containers-trailer-lot-1624695-EditedbyVH_LOGOSremoved.jpg" width="100%">
+                <div class="col-lg-offset-1 col-lg-4 res-m-0">
+                  <img class="img-fluid border-radius res-dis-none" src="../assets/img/app/container/PEXELS_cargo-containers-trailer-lot-1624695-EditedbyVH_LOGOSremoved.jpg" width="100%" height="489">
+                  
+                   <img class="img-fluid border-radius dis-none res-display" src="../assets/img/app/container/Mask Group 478.png" width="100%">
                  
                 </div>
-                  <div class=" col-lg-6">
+                  <div class=" col-lg-6 p-0">
                   <div class="content-holder">
 
-                <div class="mode-select">
+                <div class="mode-select type-con res-mt-30">
 
                     <label class="labl">Type of container</label>
                     <select class="mode-dropdown  float-right" id="select-country-name" value="cCountrycode" onchange="getCityList(this);">
@@ -167,11 +169,11 @@
                         <option value="Ocean">Ocean</option>
                     </select>
                 </div>
-                <!-- <div class="row">
-                <p class="ptb-20">Show results in :<a href="" class="red-clr"> Metric</a></p>
-              </div> -->
+                <div class="row">
+                <p class="pt-8 p">Show results in :<a href="" class="red-clr"> Metric</a></p>
+              </div>
 
-              <table id="table_id" class="mt-30 table-invoice cell-border no-footer dataTable text-center" role="grid" aria-describedby="table_id_info">
+             <!--  <table id="table_id" class=" table-invoice cell-border no-footer dataTable text-center" role="grid" aria-describedby="table_id_info">
                 <thead class="invoice-header ">
                     <tr role="row ">
                         <th class="invoice-header-label sorting_disabled" tabindex="0" aria-controls="table_id" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Location Code: activate to sort column descending">Dimensions</th>
@@ -195,14 +197,50 @@
                     <td>8.00 ft</td>
                     <td>8.39 ft</td>
                   </tr>
-
-                
-
-               
                 </tbody>
+              </table> -->
+
+<div class="con-spec">
+            <div class="row con-spec-head">
+              <div class="col-md-3 col-lg-3 col-xs-3">Dimensions</div>
+              <div class="col-md-3 col-lg-3 col-xs-3 res-pl-23">Length</div>
+              <div class="col-md-3 col-lg-3 col-xs-3">Width</div>
+              <div class="col-md-3 col-lg-3 col-xs-3">Height</div>
+            </div>
+
+          <div class="row border-con-spec m-0 p-30">
+              <div class="col-md-3 col-lg-3 col-xs-3">Exterior</div>
+              <div class="col-md-3 col-lg-3 col-xs-3">20.00 ft</div>
+              <div class="col-md-3 col-lg-3 col-xs-3">8.00 ft</div>
+              <div class="col-md-3 col-lg-3 col-xs-3">8.39 ft</div>
+
+               <div class="col-md-3 col-lg-3 col-xs-3">Interior</div>
+              <div class="col-md-3 col-lg-3 col-xs-3"> 18.40 ft</div>
+              <div class="col-md-3 col-lg-3 col-xs-3">7.31 ft</div>
+              <div class="col-md-3 col-lg-3 col-xs-3">7.00 ft</div>
+            </div>
+
+            <div class="row m-0 text-tab plr-30 pb-30">
+             <p class="m-0 "><span><b> Weight </b></span></p>
+             <span>Tare:6371 lb</span><br class="dis-none res-display"> 
+             <span>Net Weight : 68586 lb</span><br class="dis-none res-display">
+             <span>MGW :74957 lb</span><br class="dis-none res-display">
+
+             <p class="m-0 pt-20"><span><b> Door Opening Volume </b></span></p>
+             <span class="text-p ml-8"> Height : 0.00 ft</span><br class="dis-none res-display"> 
+             <span class="text-p res-ml8">Width : 0.00 ft</span><br class="dis-none res-display"> 
+             <span class="text-p res-ml8">953 Cubic Feet</span><br class="dis-none res-display"> 
+
+             <p class="m-0 pt-20"><span><b> Volume </b></span></p>
+             <span>953 Cubic Feet</span>
+             
+            
+         
+           
+            </div>
+         
 
 
-            </table>
 
 
                 </div>

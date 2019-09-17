@@ -109,7 +109,8 @@
         </li>
 
         <li class="">
-         <a class="hidden-xs"href="#"><img src="../assets/img/Group 2008.png"></a>
+             <a class="hidden-xs home-img mt19" href="product-and-services-landing-page.html"></a>
+
           <a class="visible-xs res-pt-20" href="#"><img src="../assets/img/icon/Group 3191.png"></a>
         </li>
       </ul>
@@ -125,7 +126,7 @@
 <section class=" ">
   <div class="container-fluid plr-none" >
      
-     <div class="app-banner-caption res-unset res-pt-1">
+     <div class="app-banner-caption-con res-unset res-pt-1">
       <div class="banner-text text-center">
           <h1>OUR APPS</h1>
           <h2>Small enough to know you.<br> Big enough to serve you!</h2>
@@ -139,17 +140,17 @@
     <div class="container-fluid ">
         <div class="container">
             <a href="#" style="color: #000;">
-                <h6 class="text-right font-15"><a class="red-clr" href="../app.html"><span style="padding-right: 5px;"><img src="../assets/img/app/left-arrow.svg"></span>back</a></h6>
+                <h6 class="text-right font-15 tab-back"><a class="black-clr" href="../app.html"><span style="padding-right: 5px;"><img src="../assets/img/app/left-arrow.svg"></span>back</a></h6>
             </a>
             <div class="row title align-items-center">
                 <span class="disp-inline-block"><img class="img-fluid big-img" src="../assets/img/app/Group 2697.png"></span>
-                <span class="disp-inline-block"><h2 class="tab-font-38 tittle pl-30 res-text-left">Container Vessel Tracker</h2></span>
+                <span class="disp-inline-block"><h2 class="tab-font-38 tittle pl-30 res-text-left res-pl-15">Container Vessel Tracker</h2></span>
             </div>
             
             <div class="row apps-row">
-                <div class="col-lg-offset-1 col-lg-9 res-ml-0 res-plr-45">
+                <div class="col-lg-offset-1  col-lg-9 res-ml-0 res-plr-45 tab-ml-0 tab-plr">
                     <div class="content-holder">
-                <div class="mode-select mt-30">
+                <div class="mode-select mt-30 con-ves-tra-pad">
                     <label class="labl">Enter Vessel</label>
                     <select class="mode-dropdown" id="select-country-name" value="cCountrycode" onchange="getCityList(this);">
                         <option value="">CAPE ALEXANDER</option>
@@ -158,7 +159,7 @@
                     
                     <div id="locDiv" style="position: absolute;padding-top: 30px;z-index: 999"><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul></div>
                    
-                    <button class="btn btn-red red_button2 float-right" onclick="showShippingDescription(shippingGlosHidden.value)">Submit</button>
+                    <button class="btn btn-red red_button2 float-right " onclick="showShippingDescription(shippingGlosHidden.value)">Submit</button>
                 </div>
                 
 
@@ -186,7 +187,8 @@
                         <th class="invoice-header-label sorting_disabled" tabindex="0" aria-controls="table_id" rowspan="1" colspan="1" aria-label="Coordinates: activate to sort column ascending">Vessel Type</th>
                     </tr>
                 </thead>
-                <tbody id="table-content "><tr role="row " class="odd" style="padding:10px;">
+                <tbody id="table-content ">
+                  <tr role="row " class="odd con-tab-border" >
                     <td><span>CAPE ALEXANDER</span></td>
                     <td><span>5004257</span></td>
                     <td><span>-</span></td>

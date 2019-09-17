@@ -269,10 +269,12 @@ font-weight: 600;
 .nav-logo {
     padding-top: 25px;
     width: 30%;
+    padding-left: 11px;
+    padding-bottom: 6px;
 }
 .navbar-inverse .navbar-toggle {
     border-color: #333;
-       top: 37px;
+       top: 31px;
     background: #ccc;
     border: 1px solid transparent;
     border-radius: 0px;
@@ -321,7 +323,7 @@ font-weight: 600;
     /*margin-right: 20px;*/
     z-index: 999;
  margin-left: -22px;
-    top: 123px;
+    top: 106px;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
@@ -391,10 +393,15 @@ font-weight: 600;
     height: 525px;
     padding-top: 50px;
     width: 100%;
-   
+  }
+  .home-img{
+    background:url("../img/Group 2008.png") !important; 
+    width: 19px;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    margin-top: 14px !important;
 
-
-}
+  }
 .item{
    margin-top: 10PX;
 }
@@ -535,8 +542,11 @@ font-weight: 600;
   margin:0px 60px !important;
 }
 .pb-30{
-  padding-bottom: 30px;
+  padding-bottom: 30px !important;
  /* margin-top: -7px;*/
+}
+.pb-20{
+  padding-bottom: 20px;
 }
 .ptb-60{
   padding-bottom: 60px;
@@ -610,6 +620,9 @@ font-weight: 600;
     color: #ED1B2E;
     font-weight: 700;
     /*padding: 2px 0px 4px 0px;*/
+}
+.ml-20{
+  margin-left: -20px;
 }
 
 .ml-9{
@@ -820,6 +833,10 @@ background: url("../img/marine/Group 2701.jpg");
 .img-caption-verticals:hover{
    background-image: url("../img/verticals/vertical.jpg") !important;
 }
+.home-img:hover{
+ background-image: url("../img/icon/home-red-icon.png") !important;
+
+ }
 
 .error-banner-text h1 {
     font-size: 184px !important;
@@ -1351,6 +1368,71 @@ background: #fff;
     top: -3px;
 }
 
+/***********/
+hr.big-divider {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border: 0;
+    border-top: 1px solid #5a5858;
+}
+.schedule-table {
+    font-size: 13px;
+    margin-top: 20px;
+}
+.schedule-table thead {
+    background-color: #454545;
+    color: #fff;
+}
+
+.schedule-table th {
+    text-align: center;
+    font-weight: 500;
+    vertical-align: middle !important;
+}
+.schedule-table th:nth-child(5) {
+    min-width: 130px;
+    max-width: 130px;
+    width: 130px;
+}
+.schedule-table td {
+    padding: 8px 14px !important;
+    vertical-align: middle !important;
+}
+.schedule-table td:first-child {
+    text-decoration: underline;
+}
+.schedule-table .fa {
+    cursor: pointer;
+    border: 1px solid #000;
+    padding: 1px;
+}
+.schedule-table .book-this {
+    cursor: pointer;
+    color: #ED1B2E;
+    font-weight: 700;
+}
+.disp-flex {
+    display: flex;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.cookie-bar{
+  background: #2D2D2D;
+    color: #fff;
+    font-size: 16px;
+    padding: 31px 20px 20px 20px;
+}
+.Accept-btn{
+  background-color: #DF0121;
+    border-color: #DF0121;
+    padding: 5px 37px;
+    border-radius: 6px;
+    border: transparent;
+}
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   #myCarousel h1 {
@@ -1545,8 +1627,8 @@ background: #fff;
   padding: 0px!important;
 }
 .res-plr-45{
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .tittle{
   font-size: 27px !important;
@@ -1672,7 +1754,7 @@ background: #fff;
   padding-bottom: 0px;
 }
 .res-pt-15{
-  padding-top: 15px;
+  padding-top: 15px !important;
   padding-bottom: 0px;
 }
 .res-pt-5{
@@ -1680,6 +1762,9 @@ background: #fff;
 }
 .res-pb-0{
   padding-bottom:0px;
+}
+.res-mt-10{
+  margin-top: 10px;
 }
 .res-pt-0{
   padding-top:0px !important;
@@ -1755,7 +1840,7 @@ background: #fff;
 height: unset;
 }
 .res-unset{
-  height: unset;
+  height: unset !important;
 }
 .nav-pills>li {
     width: 51%;
@@ -1797,7 +1882,7 @@ height: unset;
   padding-right:0px;
 }
 .res-pt-1{
-  padding-top: 1px;
+  padding-top: 1px !important;
 }
 #theCarousel img{
       width: 100%;
@@ -1850,6 +1935,13 @@ height: unset;
      .res-mt-60{
     margin-top:60px !important;
     }
+    .res-mt-10{
+      margin-top: 10px !important;
+    }
+    .res-mt-29{margin-top: 29px;}
+    .res-pt-plr-12{
+      padding: 4px 12px !important;
+    }
 
 
     .modal-dialog {
@@ -1876,6 +1968,9 @@ height: unset;
     .res-ml-8{
       margin-right: -8px;
       margin-left: -8px;
+    }
+    .res-ml8{
+      margin-left:8px;
     }
     .title h2 {font-size: 27px;margin-top: 20px;}
     .res-plr-7{
@@ -2007,8 +2102,8 @@ select::-ms-expand { background-color: transparent; border: none; }
 
 
 
-/*
-@media (min-width: 1280px) and (max-width: 1900px){ 
+
+@media only screen and (max-width: 1280px) and (min-height: 800px) {
    .product-dropdown {
     margin-right: -30px !important;
    }
@@ -2017,7 +2112,7 @@ select::-ms-expand { background-color: transparent; border: none; }
     margin-right: -33px !important;
    }
 
-  }*/
+  }
 
   @media (min-width: 1440px) and (max-width:1800px){ 
    .product-dropdown {

@@ -109,7 +109,8 @@
         </li>
 
         <li class="">
-         <a class="hidden-xs"href="#"><img src="../assets/img/Group 2008.png"></a>
+             <a class="hidden-xs home-img mt19" href="product-and-services-landing-page.html"></a>
+
           <a class="visible-xs res-pt-20" href="#"><img src="../assets/img/icon/Group 3191.png"></a>
         </li>
       </ul>
@@ -125,7 +126,7 @@
 <section class=" ">
   <div class="container-fluid plr-none" >
      
-     <div class="app-banner-caption res-unset res-pt-1">
+     <div class="app-banner-caption-ocien res-unset res-pt-1">
       <div class="banner-text text-center">
           <h1>OUR APPS</h1>
           <h2>Small enough to know you.<br> Big enough to serve you!</h2>
@@ -139,59 +140,61 @@
     <div class="container-fluid ">
         <div class="container">
             <a href="#" style="color: #000;">
-                <h6 class="text-right font-15"><a class="red-clr" href="../app.html"><span style="padding-right: 5px;"><img src="../assets/img/app/left-arrow.svg"></span> </a>back</h6>
+                <h6 class="text-right font-15 tab-back"><a class="black-clr" href="../app.html"><span style="padding-right: 5px;"><img src="../assets/img/app/left-arrow.svg"></span> back </a></h6>
             </a>
             <div class="row title align-items-center">
                 <span class="disp-inline-block"><img class="img-fluid big-img" src="../assets/img/app/Group 2692.png"></span>
-                <span class="disp-inline-block"><h2 class="tab-font-38 tittle pl-30">Ocean Freight Volume Calculator</h2> 
+                <span class="disp-inline-block"><h2 class="tab-font-38 tittle pl-30 res-text-left res-pl-15">Ocean Freight Volume Calculator</h2> 
                
 
             </div>
             
             <div class="row apps-row mt-30 ">
-                <div class="col-lg-offset-1 col-lg-9 bg-gray p-30 res-ml-0 res-plr-45">
+                <div class="col-lg-offset-1 col-lg-9 bg-gray p-30 res-ml-0 res-plr-45 tab-ml-0 tab-p-50">
                     <div class="content-holder pb-30">
-                <div class="mode-select">
-                    <label class="labl font-17">Dimension Calulator</label>
+                <div class="mode-select dim-cal-pad">
+                   <img src="../assets/img/icon/Group 2865 (1).png" width="20px">
+                    <label class="labl font-17 res-p-0">Dimension Calulator</label>
                     
 
-                    <button class="btn btn-red reset-btn float-right" onclick="showShippingDescription(shippingGlosHidden.value)">RESET</button>
+                    <button class="btn btn-red reset-btn float-right res-dis-none" onclick="showShippingDescription(shippingGlosHidden.value)">RESET</button>
                     <select class="mode-dropdown float-right" id="select-country-name" value="cCountrycode" onchange="getCityList(this);">
                         <option value="">Air Freight</option>
                         <option value="Ocean">Ocean</option>
                     </select>
+                    <button class="btn btn-red reset-btn res-display dis-none" onclick="showShippingDescription(shippingGlosHidden.value)">RESET</button>
 
                      </div>
 
 
   <div class="row Dim-cal">
-        <div class="col-lg-11 ">
-          <div class="col-lg-2 p-0">
+        <div class="col-lg-11 col-md-11">
+          <div class="col-lg-2 col-md-2 p-0 res-pt-15">
             <label>Number of Pieces</label>
             <input class="form-control" type="text" id="searchByShippinglet" name="searchByShippinglet" placeholder="Eg. 500" maxlength="1">
           </div>
 
-           <div class="col-lg-2 p-0">
+           <div class="col-lg-2 col-md-2 p-0">
             <label>Length of Each Piece</label>
             <input class="form-control" type="text" id="searchByShippinglet" name="searchByShippinglet" placeholder="E.g. 20" maxlength="1">
           </div>
 
-           <div class="col-lg-2 p-0">
+           <div class="col-lg-2 col-md-2 p-0">
             <label>Width of Each Piece</label>
             <input class="form-control" type="text" id="searchByShippinglet" name="searchByShippinglet" placeholder="Eg. 15" maxlength="1">
           </div>
 
-          <div class="col-lg-2 p-0">
+          <div class="col-lg-2 col-md-2 p-0">
             <label>Height of Each Piece</label>
             <input class="form-control" type="text" id="searchByShippinglet" name="searchByShippinglet" placeholder="Eg. 15" maxlength="1">
           </div>
 
-          <div class="col-lg-2 p-0">
+          <div class="col-lg-2 col-md-2 p-0">
             <label>Cu. m. (m3)</label>
             <input class="form-control" type="text" id="searchByShippinglet" name="searchByShippinglet" placeholder="This Field will be calculated" maxlength="1">
           </div>
 
-          <div class="col-lg-2 p-0">
+          <div class="col-lg-2 col-md-2 p-0">
             <label>Cu. ft. (ft3)</label>
             <input class="form-control" type="text" id="searchByShippinglet" name="searchByShippinglet" placeholder="This Field will be calculated" maxlength="1">
           </div>
@@ -199,11 +202,14 @@
         
         </div>
 
-        <div class="col-lg-1 ">
-        
+        <div class="col-lg-1 col-md-1 ">
+         <br class="res-dis-none"><br class="res-dis-none">
+       <button class="add_field_button" type="button" onclick="javascript:addRow();">+</button>
+       <button class="remove-field-button" type="button" onclick="javascript:addRow();">-</button>
+
         </div>
 
-        <div class="col-lg-offset-6 col-lg-6">
+        <div class="col-lg-offset-6 col-md-offset-6 col-lg-6 col-md-6">
           <div class="grand-total">
           <label>Grand Total</label>
           <input class="form-control disp-inline-block" type="text" placeholder="This Field will be calculated" >
@@ -214,6 +220,7 @@
        
 
       </div>
+    
                      
                     <!--   <div class="col-lg-11">
                         <div class="col-lg-2">
@@ -255,8 +262,13 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-10 UnitConverter">
-          <div class="col-lg-3 text-center pl-0">
+         <div class="col-lg-2  col-md-2 UnitConverter hidden-md hidden-lg pb-20">
+           <img src="../assets/img/app/app-new/reload.png" width="100%" class="unit-con">
+          <h3>Unit Converter </h3>
+        </div>
+
+        <div class="col-lg-10 col-md-10 UnitConverter">
+          <div class="col-lg-3 col-md-3 text-center pl-0 res-p-0">
             <div class="unit-shadow">
             <p>Length</p>
             <select class="mode-dropdown" id="select-country-name" value="cCountrycode" onchange="getCityList(this);">
@@ -270,7 +282,9 @@
           </div>
         </div>
 
-           <div class="col-lg-3 text-center  pl-0">
+
+
+           <div class="col-lg-3 col-md-3 text-center  pl-0 res-p-0">
             <div class="unit-shadow">
             <p>Weight</p>
             <select class="mode-dropdown" id="select-country-name" value="cCountrycode" onchange="getCityList(this);">
@@ -284,7 +298,7 @@
           </div>
           </div>
 
-           <div class="col-lg-3 text-center pl-0">
+           <div class="col-lg-3 col-md-3 text-center pl-0 res-p-0">
             <div class="unit-shadow">
             <p>Volume</p>
             <select class="mode-dropdown" id="select-country-name" value="cCountrycode" onchange="getCityList(this);">
@@ -298,7 +312,7 @@
           </div>
           </div>
 
-           <div class="col-lg-3 text-center  pl-0">
+           <div class="col-lg-3 col-md-3 text-center  pl-0 res-p-0">
           <div class="unit-shadow">
             <p>Temperature</p>
             <select class="mode-dropdown" id="select-country-name" value="cCountrycode" onchange="getCityList(this);">
@@ -313,7 +327,8 @@
           </div>
         </div>
 
-        <div class="col-lg-2 UnitConverter">
+        <div class="col-lg-2  col-md-2 UnitConverter hidden-xs">
+           <img src="../assets/img/app/app-new/reload.png" width="58%" class="unit-con ml-20">
           <h3>Unit Converter </h3>
         </div>
 

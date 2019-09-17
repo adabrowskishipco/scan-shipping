@@ -109,7 +109,8 @@
         </li>
 
         <li class="">
-         <a class="hidden-xs"href="#"><img src="../assets/img/Group 2008.png"></a>
+            <a class="hidden-xs home-img mt19" href="product-and-services-landing-page.html"></a>
+
           <a class="visible-xs res-pt-20" href="#"><img src="../assets/img/icon/Group 3191.png"></a>
         </li>
       </ul>
@@ -125,7 +126,7 @@
 <section class=" ">
   <div class="container-fluid plr-none" >
      
-     <div class="app-banner-caption res-unset res-pt-1">
+     <div class="app-banner-caption-emmi-cal res-unset res-pt-1">
       <div class="banner-text text-center">
           <h1>OUR APPS</h1>
           <h2>Small enough to know you.<br> Big enough to serve you!</h2>
@@ -139,19 +140,19 @@
     <div class="container-fluid ">
         <div class="container">
             <a href="#" style="color: #000;">
-                <h6 class="text-right font-15"><a class="red-clr" href="../app.html"><span style="padding-right: 5px;"><img src="../assets/img/app/left-arrow.svg"></span></a>back</h6>
+                <h6 class="text-right font-15 tab-back"><a class="black-clr" href="../app.html"><span style="padding-right: 5px;"><img src="../assets/img/app/left-arrow.svg"></span>back </a></h6>
             </a>
             <div class="row title align-items-center">
                 <span class="disp-inline-block"><img class="img-fluid big-img" src="../assets/img/app//Group 2833.png"></span>
-                <span class="disp-inline-block"><h2 class="tab-font-38 tittle pl-30">Emission Calculator</h2> 
-                  <p class="title-p">Enter details of your cargo :</p></span>
+                <span class="disp-inline-block"><h2 class="tab-font-38 tittle pl-30 res-text-left res-pl-15">Emission Calculator</h2> 
+                  <p class="title-p res-pl-15">Enter details of your cargo :</p></span>
 
             </div>
             
             <div class="row apps-row ">
-                <div class="col-lg-offset-1 col-lg-9 res-ml-0 res-plr-45">
+                <div class="col-lg-offset-1 col-lg-9 res-ml-0 res-plr-45 tab-ml-0 tab-plr">
                     <div class="content-holder pb-30">
-                <div class="mode-select mt-30">
+                <div class="mode-select mt-30 em-cal-pad">
                     <label class="labl">Mode of Transportation</label>
                     <select class="mode-dropdown" id="select-country-name" value="cCountrycode" onchange="getCityList(this);">
                         <option value="">Air Freight</option>
@@ -164,42 +165,42 @@
                 <div class="mode-select mt-30">
                   <div class="row">
 
-                    <div class="col-lg-2 Calculator">
+                    <div class="col-lg-2 col-md-2 Calculator">
                       <label class="labl">Origin Address</label>
                        <select class="mode-dropdown cal-select" id="select-city-name">
                         <option value="1">USNYC</option>
                       </select>
                     </div>
 
-                     <div class="col-lg-2 Calculator">
+                     <div class="col-lg-2 col-md-2 Calculator">
                        <label class="labl">Origin Airport</label>
                        <select class="mode-dropdown cal-select" id="select-city-name">
                         <option value="1">USNYC</option>
                       </select>
                      </div>
 
-                      <div class="col-lg-2 Calculator">
+                      <div class="col-lg-2 col-md-2 Calculator">
                         <label class="labl">Destination Airport</label>
                        <select class="mode-dropdown cal-select" id="select-city-name">
                         <option value="1">USNYC</option>
                       </select>
 
                       </div>
-                       <div class="col-lg-2 Calculator">
+                       <div class="col-lg-2 col-md-2 Calculator">
                         <label class="labl">Cargo Weight in Kgs</label>
                        <select class="mode-dropdown cal-select" id="select-city-name">
                         <option value="1">USNYC</option>
                       </select>
                     </div>
 
-                        <div class="col-lg-2 Calculator">
+                        <div class="col-lg-2 col-md-2 Calculator">
                         <label class="labl">Origin Address</label>
                        <select class="mode-dropdown cal-select" id="select-city-name">
                         <option value="1">USNYC</option>
                       </select>
                     </div>
 
-                         <div class="col-lg-2 Calculator">
+                         <div class="col-lg-2 col-md-2 Calculator">
                    <br>
                     <button class="btn btn-red red_button2 float-right" onclick="showShippingDescription(shippingGlosHidden.value)">Search</button>
                       </div>
@@ -210,10 +211,11 @@
                 </div>
 
             </div>
-                    
-            <div class="table-cal">
-            <table id="table_id" class="mt-30 table-invoice cell-border no-footer dataTable m-30 em-cal" role="grid" aria-describedby="table_id_info">
-                <thead class="invoice-header">
+              
+
+            <div class="table-cal scroll">
+            <table id="table_id" class="mt-30 em-cal table-invoice cell-border no-footer dataTable m-30 " role="grid" aria-describedby="table_id_info">
+                <thead class="invoice-header scroll">
                     <tr role="row">
                         <th class="invoice-header-label sorting_disabled" tabindex="0" aria-controls="table_id" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Location Code: activate to sort column descending">From</th>
                         <th class="invoice-header-label sorting_disabled" tabindex="0" aria-controls="table_id" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending">To &nbsp  &nbsp  &nbsp  &nbsp</th>
@@ -223,7 +225,7 @@
                     </tr>
                 </thead>
                 <tbody id="table-content ">
-                  <tr role="row" class="odd bg-white">
+                  <tr role="row" class="odd bg-white one-border">
                     <td>-</td>
                     <td>-</td>
                     <td>Air Freight</td>
@@ -231,7 +233,7 @@
                     <td>4080</td>
                   </tr>
 
-                   <tr role="row" class="odd bg-gray">
+                   <tr role="row" class="odd bg-gray border-em">
                     <td>Total</td>
                     <td>-</td>
                     <td>-</td>
@@ -239,12 +241,20 @@
                     <td>5900</td>
                   </tr>
 
-                 <tr role="row" class="odd " >
+                 <tr role="row" class="odd bg-white" >
                  
+                <td></td>
+                 <td></td>
+                  <td></td>
+                  <td></td>
+
+                    <td><a href="#" class="red-clr float-right">Download All INCO Terms<span>
+                      <i class="fa fa-download" aria-hidden="true"></i></span></td>
+                    
   
-                 <a href="#" class="red-clr float-right">Download All INCO Terms<span>
+                <!--  <a href="#" class="red-clr float-right">Download All INCO Terms<span>
                       <i class="fa fa-download" aria-hidden="true"></i></span>
-                    </a>
+                    </a> -->
                  
                  
                   </tr>
@@ -259,7 +269,7 @@
           </div>
         </div>
 
-        <div class="row body-font-p res-pt-10 pt-60">
+        <div class="row body-font-p res-pt-10 pt-60 tab-ml-0 ">
           <h3 class="text-center cal-h3">Methodology</h3>
           <p class="meth-txt "> &nbsp &nbsp &nbsp &nbsp Scan-Shipping's Emission Calculator considers the different sections of the transport chain and applies industry recognized methods of calculation.<br>&nbsp &nbsp &nbsp &nbsp
          The emissions calculated are average arithmetical values for a standard container based on a variety of theoretical factors. Depending on input data emissions and actual route taken during shipment may diverge from these average arithmetical values. No liability is accepted for the completeness and accuracy of these calculations.</p>
