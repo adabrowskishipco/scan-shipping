@@ -10,7 +10,10 @@ body {
 .border-remove a:hover{
 border-bottom: transparent !important;
 }
-
+.login-btn:hover {
+    color: #d43f3a!important;
+    border-color: #d43f3a !important;
+}
 .bg-gray{background: #F7F7F7;}
 .nav-logo{
       padding-top: 25px;
