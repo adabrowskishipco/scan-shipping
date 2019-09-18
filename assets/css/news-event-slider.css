@@ -4,9 +4,11 @@
     }
 .carousel-control.left{
  background-image:none; 
+ opacity: 0.9;
 }
 .carousel-control.right{
   background-image:none; 
+  opacity: 0.9;
 }
 
 .left-img{

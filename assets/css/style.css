@@ -7,6 +7,10 @@ body {
   margin: 0px;
    font-family: "Poppins";
 }
+.border-remove a:hover{
+border-bottom: transparent !important;
+}
+
 .bg-gray{background: #F7F7F7;}
 .nav-logo{
       padding-top: 25px;
@@ -217,7 +221,7 @@ color: #d43f3a;
 font-weight: 600;
 }
 .login-btn{
-    border: 1px solid #000;
+    border: 2px solid #606060;
     border-radius: 16px;
     padding: 2px 12px 3px 12px !important;
 }
@@ -1480,7 +1484,7 @@ hr.big-divider {
     padding-bottom:0px; 
 }
 .project-1{
-      height: 760px;
+      height: 760px !important;
 }
 .project-video{
   width: 446px;
@@ -2111,6 +2115,11 @@ select::-ms-expand { background-color: transparent; border: none; }
    {
     margin-right: -33px !important;
    }
+   .project-1 {
+    height: 725px;
+}
+.bg-black {
+   height: 360px;}
 
   }
 
@@ -2122,5 +2131,13 @@ select::-ms-expand { background-color: transparent; border: none; }
    {
    margin-right: 49px  !important;
    }
+   .bg-black {
+    background: #212121;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 61px 53px !important;
+    font-weight: 300;
+    height: 407px;
+}
 
   }
