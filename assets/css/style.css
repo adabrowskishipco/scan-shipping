@@ -18,6 +18,7 @@ border-bottom: transparent !important;
 .nav-logo{
       padding-top: 25px;
 }
+.carousel-indicators{}
 .primary-menu  li{list-style: none;display: inline;}
 
         .primary-menu a {
@@ -1589,12 +1590,12 @@ hr.big-divider {
 }
 
 .product-dropdown {
-   margin-right: -84px !important;
+   margin-right: -100px !important;
 }
 
 .verticals-dropdown {
    
-    margin-right: -84px !important;
+    margin-right: -100px !important;
     
 }
 .tab-plr-75{

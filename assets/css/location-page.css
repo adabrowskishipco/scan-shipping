@@ -19,6 +19,9 @@
     font-size: 50px;
     
 }
+.loc-text p{
+line-height: 16px;
+}
 .loc-back{
 	float: right;
     color: #000000;

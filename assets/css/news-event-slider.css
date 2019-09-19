@@ -12,14 +12,14 @@
 }
 
 .left-img{
-  top: 46%;
+  top: 50%;
   position: absolute;
   left: 13px;
 }
 .right-img{
   position: absolute;
     left: 174px;
-    top: 46%;
+    top: 50%;
 }
 
 @media (max-width:768px) {
