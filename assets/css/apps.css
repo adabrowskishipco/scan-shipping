@@ -469,7 +469,7 @@
     margin-top: 15px;
 }
 .app-banner-caption-inco{
-    background: url("../img/app/app-new/INCO_terms_apps_c-ConvertImage.jpg");
+    background: url("../img/app/app-new/book b.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -502,7 +502,7 @@
     margin-top: 15px;  
 }
 .app-banner-caption-emmi-cal{
-   background: url("../img/app/app-new/Emission_calculator_c-ConvertImage (1).jpg");
+   background: url("../img/app/app-new/black.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -546,28 +546,87 @@
     margin-top: 15px;   
 }
 .app-banner-caption-emmi-cal:hover{
-    background: url("../img/app/app-new/Emission_calculator_c.jpg")
+    background: url("../img/app/app-new/color.png");
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;   
 }
 .app-banner-caption-un-loc:hover{
    background: url("../img/app/app-new/UN_Location_Codes_apps_c.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;
+  
 }
 .app-banner-caption-shipping-glo:hover{
      background: url("../img/app/app-new/Shipping_Glossary_apps_c.jpg");
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;
 }
 
 .app-banner-caption-inco:hover{
-     background: url("../img/app/app-new/INCO_terms_apps_c.jpg");
+     background: url("../img/app/app-new/book c.png");
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;
 }
 
 .app-banner-caption-haz:hover{
      background: url("../img/app/app-new/Hazardous_Information_c.jpg");
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;
 }
 
 .app-banner-caption-ocien:hover{
-   background: url("../img/app/app-new/volume_calculator_apps_c.jpg");}
+   background: url("../img/app/app-new/volume_calculator_apps_c.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;
+}
    
    .app-banner-caption-con:hover{
-    background: url("../img/app/app-new/Container_Vessel_Tracker_apps---c-ConvertImage.jpg");}
+    background: url("../img/app/app-new/Container_Vessel_Tracker_apps---c-ConvertImage.jpg");
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 15px;
+}
 
    
 .border-radius{
