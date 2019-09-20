@@ -458,7 +458,7 @@
     color: #000;
 }
 .app-banner-caption-con{
-    background: url("../img/app/app-new/Group 2865.png");
+    background: url("../img/app/app-new/Container_Vessel_Tracker_apps---c-ConvertImage (1).jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -469,7 +469,7 @@
     margin-top: 15px;
 }
 .app-banner-caption-inco{
-    background: url("../img/app/app-new/Group 2857 (2).png");
+    background: url("../img/app/app-new/INCO_terms_apps_c-ConvertImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -491,7 +491,7 @@
     margin-top: 15px;  
 }
 .app-banner-caption-shipping-glo{
-   background: url("../img/app/app-new/Group 2859 (1).png");
+   background: url("../img/app/app-new/Shipping_Glossary_apps_c-ConvertImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -502,7 +502,7 @@
     margin-top: 15px;  
 }
 .app-banner-caption-emmi-cal{
-   background: url("../img/app/app-new/Group 2861.png");
+   background: url("../img/app/app-new/Emission_calculator_c-ConvertImage (1).jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -513,7 +513,7 @@
     margin-top: 15px;  
 }
 .app-banner-caption-ocien{
-   background: url("../img/app/app-new/Group 2862.png");
+   background: url("../img/app/app-new/volume_calculator_apps_c-ConvertImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -524,7 +524,7 @@
     margin-top: 15px;  
 }
 .app-banner-caption-haz{
-   background: url("../img/app/app-new/Group 2863.png");
+   background: url("../img/app/app-new/Hazardous_Information_c-ConvertImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -545,6 +545,31 @@
     width: 100%;
     margin-top: 15px;   
 }
+.app-banner-caption-emmi-cal:hover{
+    background: url("../img/app/app-new/Emission_calculator_c.jpg")
+}
+.app-banner-caption-un-loc:hover{
+   background: url("../img/app/app-new/UN_Location_Codes_apps_c.jpg");
+}
+.app-banner-caption-shipping-glo:hover{
+     background: url("../img/app/app-new/Shipping_Glossary_apps_c.jpg");
+}
+
+.app-banner-caption-inco:hover{
+     background: url("../img/app/app-new/INCO_terms_apps_c.jpg");
+}
+
+.app-banner-caption-haz:hover{
+     background: url("../img/app/app-new/Hazardous_Information_c.jpg");
+}
+
+.app-banner-caption-ocien:hover{
+   background: url("../img/app/app-new/volume_calculator_apps_c.jpg");}
+   
+   .app-banner-caption-con:hover{
+    background: url("../img/app/app-new/Container_Vessel_Tracker_apps---c-ConvertImage.jpg");}
+
+   
 .border-radius{
     border-radius: 8px;
 }

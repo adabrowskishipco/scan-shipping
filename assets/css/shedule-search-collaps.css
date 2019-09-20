@@ -1,0 +1,95 @@
+<style type="text/css">
+  .shesule-row p{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .nevi-blue{
+    color: #283570;
+  }
+  .shesule-row{
+    background-color: #EEEEEE;
+    border-radius: 2px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+   
+  }
+  .pad{padding: 0 !important;}
+  .colm-1{
+        float: left;
+    width: 15%;
+    text-align: right;
+    font-family: Poppins, sans-serif;
+    padding-right: 30px;
+  }
+  .colm-2{
+   
+    /*width: 55%;*/
+    text-align: left;
+    padding-left: 35px !important;;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Poppins, sans-serif; 
+  }
+  .card:not(:first-child):before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 22px;
+    transform: skew(-30deg);
+    background-color: #EEEEEE;
+    margin-top: -20px;
+    left: 50%;
+}
+.border-top{
+  border-top: 1px solid #ddd;
+    padding: 10px 0px 0px 0px;
+    margin-top: 25px;
+  }
+  .pt-25{
+    padding-top: 25px;
+  }
+  .pad-serch{
+    padding: 0px 20px 10px 20px;
+  }
+  .clr-black{color: black}
+  .serch-title{padding: 20px 0px}
+.font-600{
+  font-weight: 600;
+}
+.clr-black  a:hover{ color:#000 !important; }
+.clr-black{
+  color: #000;
+}
+.font-27{
+  font-size: 27px;
+    padding-left: 13px;
+}
+
+.mt-20{margin-top:20px;}
+
+ .node circle {
+        fill: #fff;
+        stroke: green;
+        stroke-width: 1.5px;
+    }
+
+    .node {
+        font: 12px sans-serif;
+    }
+
+    .link {
+        fill: none;
+        stroke: green;
+        stroke-width: 1.5px;
+    }
+    g text{
+        font-size: 11px;
+    }
+
+}
+</style>

@@ -15,7 +15,7 @@
 <script src="assets/js/script.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
  <link rel="stylesheet" href="assets/css/high-resolution.css">
-
+<link rel="stylesheet" href="assets/css/shedule-search-collaps.css">
 </head>
 <body>
 
@@ -40,7 +40,7 @@
         <!--   <li class=""><a class="" href="News-&-Events.html"><img src="assets/img/news.png" class="pr-17 tab-pr-10 res-p-0" >NEWS</a></li> -->
           <li class="res-p-0"><a  class="res-p-0" href="location.html"><img src="assets/img/Path 1634.png" class="pr-17 tab-pr-10 res-p-0" >LOCATIONS</a></li>
           <li class=""><a href="careers.html" class=" res-plr-c"> CAREERS</a></li>
-          <li><a href="#popup1" class="login-btn res-ml-4">Login</a><img src="assets/img/Path 208.png" class="pl-17 tab-pl-10 res-pl-9" > </li>
+          <li><a href="#popup1" class="login-btn res-ml-4">Login</a><a href="#lightbox-1"><img src="assets/img/Path 208.png" class="pl-17 tab-pl-10 res-pl-9" ></a></li>
 
         </div>
         
@@ -166,6 +166,7 @@
                     </div>
                 </span>
             </div>
+
             
             <div class="row schedule-table">
                 <div class="table-responsive">
@@ -192,9 +193,78 @@
                           <td>Jabel Ali, United Arab Emirates</td>
                           <td class="text-center">29</td>
                           <td class="text-center">14</td>
-                          <td class="text-center"><i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                          <td class="text-center"><i class="fa fa-arrow-down" aria-hidden="true"data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i></td>
                           <td class="text-center"><span class="book-this">Book This > </span></td>
                         </tr>
+
+                       
+   <td colspan="9" class="pad" style="padding: 0 !important">
+<div class="collapse pt-25" id="collapseExample">
+  
+
+  <div class="card card-body">
+    <div class="shesule-row">
+       <div class="colm-1">
+       <img src="assets/img/icon/port.png" alt="Los Angeles" width="40px">
+     </div>
+     <div class="colm-2">
+    <p>New York <span class="nevi-blue">(Cut Off:Thu 19 th sep 2019) </span>to loss Angeles</p>
+    <p>New York, United States <span class="nevi-blue"> (ETD: Fri 27th Sep 2019) </span> to Bremen, Germany (ETA: Mon 7th Oct 2019)</p>
+  </div>
+    </div>
+  </div>
+
+   <div class="card card-body">
+    <div class="shesule-row ">
+      <div class="colm-1">
+       <img src="assets/img/icon/warehouse.png" alt="Los Angeles" width="30px">
+     </div>
+    <p>Bremen to Minsk</p>
+    </div>
+  </div>
+
+  <div class="card card-body">
+    <div class="shesule-row ">
+       <div class="colm-1">
+       <img src="assets/img/icon/warehouse.png" alt="Los Angeles" width="30px">
+     </div>
+    <p>Minsk <span class="nevi-blue">(ETA:Tue 5th Nov 2019)</span></p>
+    </div>
+  </div>
+
+ 
+
+
+  
+   
+    
+<svg width="100%" height="210" class="border-top"><g transform="translate(181,0)"><path class="link" d="M0,70C98.75,70 98.75,70 197.5,70"></path><path class="link" d="M197.5,70C296.25,70 296.25,70 395,70"></path><path class="link" d="M395,70C493.75,70 493.75,70 592.5,70"></path><path class="link" d="M592.5,70C691.25,70 691.25,70 790,70"></path><g class="node" transform="translate(0,70)"><circle r="4.5" class="circle-comp"></circle><text dx="20" dy="25" style="text-anchor: end;">USNYC</text>
+
+  <text dx="85" dy="70">Transfer</text><text dx="90" dy="90"></text><image xlink:href="assets/img/icon/container.png" x="90" y="20" width="30px" height="30px" cursor="initial"></image>
+  <image xlink:href="assets/img/icon/warehouse.png" x="-15" y="-40" width="30px" height="30px" cursor="pointer" onclick="locationPopup('225','USNYC')"></image></g>
+
+  <g class="node" transform="translate(197.5,70)"><circle r="4.5" class="circle"></circle><text dx="20" dy="25" style="text-anchor: end;">USNYC</text><text dx="85" dy="70">Transfer</text><text dx="90" dy="90"></text>
+    <image xlink:href="assets/img/icon/container.png" x="90" y="20" width="30px" height="30px" cursor="initial"></image>
+    <image xlink:href="assets/img/icon/warehouse.png" x="-15" y="-40" width="30px" height="30px" cursor="pointer" onclick="locationPopup('225','USNYC')"></image></g><g class="node" transform="translate(395,70)"><circle r="4.5" class="circle"></circle><text dx="20" dy="25" style="text-anchor: end;">USNYC</text><text dx="69" dy="70">USNYC to DEBRE</text><text dx="75" dy="90">WIDE BRAVO</text>
+    <image xlink:href="assets/img/icon/ocean.png" x="90" y="20" width="30px" height="30px" cursor="pointer" onclick="vesselPopup('WIDE BRAVO','9694531','USNYC','DEBRE','Mon 7th Oct 2019','Fri 27th Sep 2019')"></image>
+
+    <image xlink:href="assets/img/icon/port.png" x="-15" y="-40" width="30px" height="30px" cursor="pointer" onclick="locationPopup('225','USNYC')"></image>
+  </g><g class="node" transform="translate(592.5,70)"><circle r="4.5" class="circle-comp"></circle><text dx="20" dy="25" style="text-anchor: end;">DEBRE</text><text dx="69" dy="70">DEBRE to BYMSQ</text><text dx="90" dy="90"></text>
+
+  <image xlink:href="assets/img/icon/notavailable.png " x="90" y="20" width="30px" height="30px" cursor="initial"></image>
+
+  <image xlink:href="assets/img/icon/port.png" x="-15" y="-40" width="30px" height="30px" cursor="pointer" onclick="locationPopup('80','DEBRE')"></image></g><g class="node" transform="translate(790,70)"><circle r="4.5" class="circle"></circle><text dx="-20" dy="25" style="text-anchor: start;">BYMSQ</text><text dx="70" dy="70"></text><text dx="70" dy="90"></text>
+  <image x="90" y="20" width="0px" height="30px" cursor="initial"></image>
+
+  <image xlink:href="assets/img/icon/warehouse.png" x="-15" y="-40" width="30px" height="30px" cursor="initial"></image></g></g></svg></div></td></tr>
+  </div>
+</div> 
+</div>
+</td>
+
+
+
+
                         <tr>
                           <td class="text-center">SOFIA EXPRESS/47 NYKS</td>
                           <td class="text-center">Mon 18th Jun 2018/12:00:00 PST</td>
@@ -405,24 +475,22 @@
 </form>
         </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-default submit-btn">SUBMIT</button>
+         <a href="sailing-schedule-search.html"> <button type="submit" class="btn btn-default submit-btn">SUBMIT</button></a>
         </div>
       </div>
       
     </div>
   </div>
 
-<!--  <style>
-     .product-dropdown {
-        display: inline-flex;
-        position: absolute;
-        left: auto;
-        right: 148px !important;
-        top: 110px;
-  }
-   @media (min-width: 1920px) and (max-width: 2560px)  { .product-dropdown {right: 435px !important;
-    }}
-  </style> -->
+<div class="lightbox" id="lightbox-1">
+<div class="search-input">
+  <input type="text" id="search-box-term" placeholder="Enter your text ....">
+  <button type="button"class="search-btn"><img src="assets/img/Path 208.png"></button>
+</div>
+<a class="lightbox__close" href="#">X</a>
+</div>
+
+
 
   <script type="text/javascript">
       $( '.dropdown-2' ).hover(function() {

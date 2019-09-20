@@ -52,4 +52,13 @@
 .project-video{
   width: 879px;
 }
+.lightbox {
+    
+    left: 63%;
+    width: 36%;
+    top: 37px;
+    }
+    .Shenzhen-tel {padding-top: 28px;}
+    .Shanghai-tel {margin-top: -3px;}
+    .Jakarta-tel{     padding-top: 20px;}
 }

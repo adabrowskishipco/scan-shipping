@@ -797,18 +797,6 @@ background: url("../img/marine/Group 2701.jpg");
     width: 100%;
     margin-top: 15px;
 }
-
-
-/*.news-banner-caption:hover{
-  background-image: url("../img/news/Group 2815.png") !important;
-}
-.career-banner-caption:hover{
-  background-image: url("../img/carrear/Group 2812 (1).png") !important;
-}
-.img-caption-verticals:hover{
-   background-image: url("../img/verticals/PEXELS_Verticals-All_eight-red-steel-cranes-799096-editedbyVH_LOGOSremoved (2).png") !important;
-}*/
-
 .aog-banner-caption:hover{
    background-image: url("../img/aog/Group 2699color.jpg") !important;  
 }
@@ -1442,6 +1430,79 @@ hr.big-divider {
     border: transparent;
 }
 
+.lightbox {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 20px; 
+  left: 82%;
+  transition: all 0.8s ease;
+  width: 28%;
+  position: absolute;
+  top: 4rem;
+    
+    margin-left: -25%;
+    transition: all 0.8s ease;
+    box-shadow: 0px 0px 2px 0px #ccc;
+    z-index: 999;
+    background: #f7f7f7;
+    padding: 21px 20px 36px 20px;
+    border-radius: 0px;
+    border: 1px solid #c6c1c1;
+}
+
+  .lightbox__close {
+   background: #fff;
+    color: #000;
+    /* display: block; */
+    /* font-weight: bold; */
+    height: 2rem;
+   line-height: 18.5px;
+    text-align: center;
+    text-decoration: none;
+    width: 2rem;
+    border-radius: 100%;
+    /* box-shadow: 0 0 4px rgba(190, 34, 34, 0.5); */
+    position: absolute;
+    top: 0.6rem;
+    font-size: 11px;
+    right: 0.5rem;
+    border: 1px solid #a9a9a9;
+  }
+
+.lightbox:target {
+  opacity: 1;
+  visibility: visible;
+}
+.search-input input {
+   width: 100%;
+    font-size: 15px;
+    padding: 20px;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #777;
+    text-align: left;
+}
+.search-btn {
+  font-size: 48px;
+    color: #a9a9a9;
+    background: 0 0;
+    border: 0;
+    /* float: right !important; */
+    /* top: 5px; */
+    position: absolute;
+    text-align: end !important;
+    top: 5px;
+    right: 19px;
+}
+.Shenzhen-tel{padding-top: 7px;}
+.Shanghai-tel{margin-top: -6px;}
+.Surabaya-tel{padding-top: 8px;}
+.Lampung-tel{margin-top: -12px;}
+.Petersburg-tel{padding-top: 11px;}
+.Vladivostok-tel{padding-top: 10px;}
+
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   #myCarousel h1 {
     font-size: 45px;
@@ -1617,6 +1678,13 @@ hr.big-divider {
  
 
  @media (max-width:768px) {
+  .Shenzhen-tel{padding-top:unset;}
+.Shanghai-tel{margin-top: unset;}
+.Surabaya-tel{padding-top: unset;}
+.Lampung-tel{margin-top: unset;}
+.Petersburg-tel{padding-top: unset;}
+.Vladivostok-tel{padding-top:unset;}
+
 .res-mb-50{
   margin-bottom: 50px !important;
 }
@@ -2063,6 +2131,14 @@ height: unset;
 }
 .res-ml-13{margin-left: 26px !important;}
 
+/*.lightbox {
+    
+   top: 130px;
+    left: 41%;
+    width: 67%;
+    
+    }*/
+
 
 
 }
@@ -2124,6 +2200,9 @@ select::-ms-expand { background-color: transparent; border: none; }
 }
 .bg-black {
    height: 360px;}
+   .Lampung-tel {
+    margin-top: -28px;
+}
 
   }
 
@@ -2144,4 +2223,7 @@ select::-ms-expand { background-color: transparent; border: none; }
     height: 407px;
 }
 
+.lightbox {
+   left: 80%;
+    }
   }
