@@ -3,11 +3,12 @@
   box-sizing: border-box;
 }
 .table-condensed  .month{
-  padding: 1px;
-  font-size: 10px;
+  padding: 3px;
+    font-size: 11px;
+    display: -webkit-inline-box;
 }
 .datepicker-switch{text-align: center;}
-.table-condensed .year{font-size: 10px;padding: 0px 3px;}
+.table-condensed .year{font-size: 11px;padding: 0px 3px;display: -webkit-inline-box;}
 
 body {
   margin: 0px;
@@ -264,6 +265,11 @@ font-weight: 600;
     padding-top: 15px;
     width: 32%;
 }*/
+
+.table-condensed .year {
+    font-size: 9px;
+    padding: 0px 2px;
+}
 .navbar{
   margin-bottom: 0px;
 }
@@ -1322,8 +1328,26 @@ background: #fff;
       padding: 10px !important;
           background: #f4f4ed;
     border-radius: 0px;
+   /* overflow-x: scroll;*/
+   width: 197px;
+        
     }
+    #myModal input, select, textarea { text-align: left !important; }
+/*    .datepicker.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+    padding: 3px !important;
+    border: 1px solid #ccc;
+    font-size: 13px;
+}*/
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+    padding: 4px;
+    font-size: 13px;
+}
 
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top{
+/*left: 714.375px !important;
+    z-index: 1060;
+    position: absolute !important;*/
+}
     .datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover {
   background: #DF0121;
     color: #fff;
@@ -1354,6 +1378,17 @@ background: #fff;
    margin-top: 10px;
     top:20px;
 }*/
+.ps-head{
+  font-size: 68px;
+    font-weight: 600;
+    /* letter-spacing: 1.9px; */
+    line-height: 80px;
+}
+.carousel-caption1{
+ top: 45%;
+    position: absolute;
+    left: 16%;
+}/*top: 146.5%;*/
 
 .primary-menu a:active, a:hover {
   
@@ -1691,6 +1726,20 @@ hr.big-divider {
 .Petersburg-tel{padding-top: unset;}
 .Vladivostok-tel{padding-top:unset;}
 
+.ps-head{
+      font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.carousel-caption1 {
+    top: 21%;
+    position: absolute;
+    left: 13%;
+}
+.res-pt-1{
+  padding-top: 1px;
+}
 .res-mb-50{
   margin-bottom: 50px !important;
 }
@@ -2209,6 +2258,16 @@ select::-ms-expand { background-color: transparent; border: none; }
    .Lampung-tel {
     margin-top: -28px;
 }
+.carousel-caption1 {
+    top: 37%;
+    position: absolute;
+    left: 14%;
+}
+#light {
+    
+    top: 35%;
+    left: 44% !important;
+  }
 
   }
 
@@ -2232,4 +2291,10 @@ select::-ms-expand { background-color: transparent; border: none; }
 .lightbox {
    left: 80%;
     }
+
+    .carousel-caption1 {
+    top: 36%;
+    position: absolute;
+    left: 18%;
+}
   }

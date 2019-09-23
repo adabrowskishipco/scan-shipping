@@ -8,7 +8,7 @@
   width: 100%;
   height: auto;
 }
-.overlay {
+.overlay-new {
  position: absolute;
     top: 56px;
     bottom: 0;
@@ -23,7 +23,7 @@
 
    
 }
-.con:hover .overlay {
+.con:hover .overlay-new {
   opacity: 0.9;
 }
 

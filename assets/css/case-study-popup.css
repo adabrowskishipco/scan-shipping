@@ -18,7 +18,7 @@
 }
 
 .case-study-video{
-  padding: 5px 50px 45px 50px;
+ padding: 10px 10px 3px 10px;
 
 }
 
@@ -26,7 +26,7 @@
   display: none;
   position: fixed;
   top: 45%;
-  left: 27%;
+    left: 44%;
  /* max-width: 600px;
   max-height: 360px;*/
   margin-left: -300px;

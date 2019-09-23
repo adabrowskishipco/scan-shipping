@@ -61,4 +61,19 @@
     .Shenzhen-tel {padding-top: 28px;}
     .Shanghai-tel {margin-top: -3px;}
     .Jakarta-tel{     padding-top: 20px;}
+
+    .carousel-caption1 {
+    top: 27%;
+    position: absolute;
+    left: 26%;
+}
+.{
+  height: 446px;
+    padding-top: 8px;
+}
+#light {
+    
+   top: 51% !important;
+    left: 46% !important;
+  }
 }
