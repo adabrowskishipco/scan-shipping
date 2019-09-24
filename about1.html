@@ -11,17 +11,50 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
+   
   <script src="assets/js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script> -->
   <link rel="stylesheet" href="assets/css/high-resolution.css">
-   <link rel="stylesheet" href="assets/css/login-popup.css">
-   <link rel="stylesheet" href="assets/css/case-study-popup.css">
-  
-
-
+  <link rel="stylesheet" href="assets/css/login-popup.css">
 </head>
 <body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<!-- <p>Click week numbers to select weeks, dates to select dates etc.</p>
+
+<label>Select Week</label>
+<input type="text" id="datepicker" name="weekPicker"> -->
+
+<script type="text/javascript">
+    $(function() {
+  $("#datepicker").datepicker({
+    showWeek: true,
+    firstDay: 1,
+    maxDate: 'today',
+    beforeShow: function(elem, ui) {
+      $(ui.dpDiv).on('click', 'tbody .ui-datepicker-week-col', function() {
+        $(elem).val('Week ' + $(this).text()).datepicker( "hide" );
+      });
+    }
+  });
+});
+
+    $(function() {
+  $("#datepicker2").datepicker({
+    showWeek: true,
+    firstDay: 1,
+    maxDate: 'today',
+    beforeShow: function(elem, ui) {
+      $(ui.dpDiv).on('click', 'tbody .ui-datepicker-week-col', function() {
+        $(elem).val('Week ' + $(this).text()).datepicker( "hide" );
+      });
+    }
+  });
+});
+</script>
 
 <header class="navbar navbar-inverse bs-docs-nav" role="banner">
   <div class="container plr-65 res-plr-20 tab-plr-45">
@@ -41,26 +74,25 @@
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" >
 
      <div class="primary-menu text-right">
-        <!-- <li class=""><a class="" href="News-&-Events.html"><img src="assets/img/news.png" class="pr-17 tab-pr-10 res-p-0" >NEWS</a></li> -->
+        <!--   <li class=""><a class="" href="News-&-Events.html"><img src="assets/img/news.png" class="pr-17 tab-pr-10 res-p-0" >NEWS</a></li> -->
           <li class="res-p-0"><a  class="res-p-0" href="location.html"><img src="assets/img/Path 1634.png" class="pr-17 tab-pr-10 res-p-0" >LOCATIONS</a></li>
           <li class=""><a href="careers.html" class=" res-plr-c"> CAREERS</a></li>
           <li><a href="#popup1" class="login-btn res-ml-4">Login</a><a href="#lightbox-1"><img src="assets/img/Path 208.png" class="pl-17 tab-pl-10 res-pl-9" ></a> </li>
-        </div>
-        
-     
+      </div>
 
-      <ul class="nav navbar-nav navbar-right res-mt-60">
-        <li>
+     
+     <ul class="nav navbar-nav navbar-right res-mt-60">
+        <li class="active">
           <a href="about.html">ABOUT</a>
         </li>
         
-        <li class="dropdown dropdown-1 active res-dis-none desk-dropdown">
+        <li class="dropdown  res-dis-none desk-dropdown">
      <a href="index.html">PRODUCTS & SERVICES</a>
-          <ul class="dropdown-menu product-dropdown desk-dropdown-menu">
+          <ul class="dropdown-menu product-dropdown  desk-dropdown-menu">
           <li><a href="ocean-Freight.html">Ocean</a></li>
           <li><a href="air.html">Air</a></li>
           <li><a href="road.html">Road </a></li>
-          <li class="active"><a href="project-1.html">Projects </a></li>
+          <li><a href="project-1.html">Projects </a></li>
           <li><a href="Warehousing.html">Warehousing </a></li>
           <li><a href="Value-added-services.html">Value Added Services</a></li>
           </ul>
@@ -68,23 +100,24 @@
         
        
 
-         <li class="dropdown dropdown-2  res-dis-none desk-dropdown">
+         <li class="dropdown   res-dis-none desk-dropdown">
           <a href="Verticals.html">VERTICALS</a>
-          <ul class="dropdown-menu verticals-dropdown desk-dropdown-menu">
+          <ul class="dropdown-menu  verticals-dropdown desk-dropdown-menu">
             <li><a href="food-&-bevrage-1.html">Food & Beverage</a></li>
           <li><a href="Aid-&-Relief.html">Aid & Relief</a></li>
           <li><a href="Marine-logistics.html">Marine Logistics</a></li>
-         <!--  <li><a href="Pharma-Logistics.html">Pharma Logistics</a></li> -->
+          <!-- <li><a href="Pharma-Logistics.html">Pharma Logistics</a></li> -->
           <li><a href="AOG-Aerospace.html">AOG/Aerospace</a></li>
           </ul>
         </li>
 
 
+      
 
         <li class="dropdown mobile-dropdown dis-none res-display">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS & SERVICES </a>
           <ul class="dropdown-menu mobile-menu">
-         
+          
           <li><a href="ocean-Freight.html">Ocean</a></li>
           <li><a href="air.html">Air</a></li>
           <li><a href="road.html">Road</a></li>
@@ -97,188 +130,143 @@
         <li class="dropdown mobile-dropdown dis-none res-display">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">VERTICALS </a>
           <ul class="dropdown-menu mobile-menu">
-         
+          
           <li><a href="food-&-bevrage-1.html">Food & Beverage</a></li>
           <li><a href="Aid-&-Relief.html">Aid & Relief</a></li>
           <li><a href="Marine-logistics.html">Marine Logistics</a></li>
-      <!--     <li><a href="Pharma-Logistics.html">Pharma Logistics</a></li> -->
+       <!--    <li><a href="Pharma-Logistics.html">Pharma Logistics</a></li> -->
           <li><a href="AOG-Aerospace.html">AOG/Aerospace</a></li>
           </ul>
         </li>
 
 
 
-        <li class="">
+        <li>
           <a href="app.html">APPS</a>
         </li>
+
         <li class="border-remove">
          <a class="hidden-xs home-img" href="product-and-services-landing-page.html"></a>
           <a class="visible-xs res-pt-20" href="product-and-services-landing-page.html"><img src="assets/img/icon/Group 3191.png"></a>
+      
         </li>
       </ul>
+
     </nav>
   </div>
 </header>
+
+
+
+
+
+
 
 <!-- *********************************-->
 <section class="pb-30 ">
   <div class="container-fluid plr-none" >
      
-     <div class="banner-caption">
+     <div class="about-banner-caption res-pt-10">
       <div class="banner-text text-center">
-          <h1>PRODUCTS & SERVICES</h1>
-          <h2>Small enough to know you.<br> Big enough to serve you!</h2>
+          <h1>ABOUT US</h1>
+          <h2>Global transport and logistics<br> solutions since 1969.</h2>
           <button type="button" class="btn btn-danger banner-btn" data-toggle="modal" data-target="#myModal">Sailing Schedule</button>
         </div>
       </div>
+
   </div>
 </section>
-
 <!-- *********************************-->
+<section class="pt-10 res-pb-0">
+  <div class="container-fluid plr-60">
+   
+       <div class="row about">
+        <p>Scan-Shipping was founded in 1969 and is headquartered in Copenhagen, Denmark with additional offices in Scandinavia, Europe, North
+       
+         America and Asia. The group’s initial focus and business was the representation of shipping lines and freight forwarding. Since then, the
+         company has developed and expanded its range of services to cover all aspects of the freight industry. </p><br>
+         <p>Today, Scan-Shipping is a global service provider offering a complete portfolio of shipping and logistics, including Air Freight, LCL & FCL Ocean
+         Freight, Road and Rail Transport, Project Cargo, Warehousing, Turnkey Projects, etc.</p><br>
+          <p>The company also provides tailor-made end-to-end logistic solutions to the Food & Beverage, Aid & Relief, Marine, Oil & Gas, and Aerospace industries.
+        </p>
 
-<div class="container-fluid pt-30">
+      </div>
+
+  </div><hr class="hr-line ">
  
-    <div class="row plr-7 project plr-32">
-      <div class="col-md-4 plr-7">
-         <img src="assets/img/project/Mask_Group_185_rcnuqt.jpg" alt="Los Angeles" width="100%" class="project-1 res-unset">
-      </div>
-      <div class="col-md-8 plr-7 body-font-p">
-        <h2 class="tab-font-38  tittle">Projects</h2>
-        <p class="tab-font-14 ">
-         <p class="tab-font-14 ">
-         At Scan-Shipping, we specialize in the transport of all types of oversized cargo. Our experienced project teams manage a variety of assignments, through concentrated engineering services, vessel chartering and a multitude of other resources that fit the job. Our collective efforts ensure the sound movement of your cargo, regardless of size or mass. Please contact your local Scan-Shipping office for assistance on an upcoming <b>Oversized, Heavy, RO/RO </b>and <b> Breakbulk</b> project,<br class="dis-none tab-display"><a href="location.html" class="red-clr"> here</a>.
-         </p><br>
-         <p class="tab-font-14"> Our <b>Crane & Port Equipment Transport Division </b>are also at your service. Our highly experienced team specializes in the movement of: Rail Mounted Quay Cranes (RMQC); Rubber Tyre Gantry Cranes (RTGC); Container Reach Stacker; Terminal Tractors; Luffing Cranes – and more. For more information or to request a quote, <a href="mailto:cranetransport@scan-shipping.com" class="red-clr">cranetransport@scan-shipping.com</a>.</p>
-         
-         
-        <div class="row project-img-row pb-12 res-pt-0">
-          <div class="col-md-6 res-pt-40 pr-7 res-pr-0">
-            <img src="assets/img/project/Mask Group 58.png" alt="Los Angeles" width="100%">
-          </div>
-          <div class="col-md-6 res-pt-40 pl-7 res-pl-0">
-            <img src="assets/img/project/Mask Group 59.png" alt="Los Angeles" width="100%">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row  plr-7 plr-32 pb-12">
-      <div class="col-md-4 res-pt-40 plr-7">
-        <img src="assets/img/project/Mask Group 57.png" alt="Los Angeles" width="100%">
-      </div>
-      <div class="col-md-4 res-pt-40 plr-7">
-        <img src="assets/img/project/Mask Group 63.png" alt="Los Angeles" width="100%">
-      </div>
-      <div class="col-md-4 res-pt-40 plr-7">
-        <img src="assets/img/project/Mask Group 62.png" alt="Los Angeles" width="100%">
-      </div>
-    </div><hr class="hr-line ml-24 res-pt-10">
- 
-</div>
+</section>
+
+
 
 <div class="container-fluid">
- 
-    <div class="row case-study plr-32 pt-10">
-     <!--   <a href="case-study.html"> -->
-      <div class="col-md-6 plr-7 res-pt-30">
-        <!-- <iframe  class="project-video" width="610" height="320" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
-        <img src="assets/img/project/Group 2856 (1).png" alt="Los Angeles" width="100%" height="340" class="" onclick="lightbox_open();">
-      </div>
-   <!--  </a> -->
-      <div class="col-md-6 plr-7 body-font-p">
-        <h2 class="tab-font-38 res-font-27 tittle">Case Study</h2>
-        <h3 class="res-font-19">Delivery of 9 RMQC (STS) from India to Turkey</h3>
-     <!--    <p class="tab-font-14">
-          Project Specifications: 9 Rail-Mounted-Quay-Cranes from Pipavav to Asyaport. </p>
-          <p class="tab-font-14">Scan-Shipping has completed the delivery of 9 units fully erected Rail- Mounted-Quay-Cranes from Pipavav, India to Asyaport /Tekirdag, Turkey. </p>
-          <p class="tab-font-14">The relocation included 3 units of 13 rows with the outreach boom of 13 container width combined, each cranes weighted 1,600 tons.
-        </p> -->
+      
 
-        <p class="tab-font-14">
-          Scan-Shipping delivers 9 fully erected Rail-Mounted-Quay-Cranes (RMQCs) from the Port of Pipavav, India to Asyaport, Turkey.</p>
-          <p class="tab-font-14">To complete this project the pull & tug winching method was utilized for the loading in India and the skidding method on temporary constructed rails for offloading in Turkey. The contract included 2 units recorded to be the world’s heaviest <b>Super-PostPanamax Cranes</b> weighing 2,400 tons each and 3 units of 13 rows with the outreach boom of 13 container widths combined, each crane weighing 1,600 tons. In total, we delivered 4 units (22 rows), 2 units (24 rows) and 3 units (13 rows). </p>
-          <p class="tab-font-14">Scan-Shipping is proud to have been the main contractor for this challenging and exciting mobilization project to establish Turkey’s largest container port, Asyaport.
-        </p>
-      </div>
-
-    </div>
-   <!--  <div class="row plr-32 body-font-p">
-      <p class="p-17 tab-font-14 pt-14 res-plr-7 plr-7">We utilized the pull & tug winching method for the load out of India, and by skidding method on temporary constructed rails for off load in Turkey. The contract included 2 units recorded to be the world heaviest Super-PostPanamax Cranes weighing 2,400 tons each.</p>
-      <p class="p-17 tab-font-14 res-plr-7 plr-7">In total, we delivered 4 units (22 rows), 2 units (24 rows) and 3 units (13 rows). Scan-Shipping is proud to be the main contractor for this mobilization project.</p>
-    </div> -->
-    <hr class="hr-line ml-24">
-
-    <div class="row completed-pjct res-plr-7 res-pt-30 pt-14">
-
-<div class="col-md-6">
-      <h2>COMPLETED PROJECT</h2>
-    </div>
+    <div class="row completed-pjct res-plr-7 res-pt-30 pt-14 our-history">
+      <div class="col-md-6">
+     <h2>OUR HISTORY & PEOPLE</h2>
+   </div>
 
     <div class="col-md-6">
-      <h4 class="pagination"><span class="red-clr">1</span> 2 3  . . .  Next > </h4>
+     <!--  <h4 class="pagination-about"><span class="red-clr">1</span> 2 3 4 5 . . . . . Next ></h4> -->
     </div>
 
 
       
- 
-
-  <div class=" multi-slider body-font-p gallery clearfix">
+   <div class=" multi-slider body-font-p" >
     <div class="col-md-12 col-lg-12 ">
       <div class="carousel carousel-showmanymoveone slide multi-item-carousel plr-39 res-plr-none" id="theCarousel">
         <div class="carousel-inner  ">
           <div class="item active">
             <div class="col-xs-12 col-sm-6 col-md-4 plr-7">
               <div class="slider-border">
-            <img src="assets/img/project/Mask Group 180.jpg" class="img-responsive">
-              <p class="pt-14 tab-font-14 tab-pt-15">Lift on/off 4 Rubber Tyre Gantry Cranes from Port of Salalah, Oman to Port of Manila, Philippines</p>
+            <img src="assets/img/about/Mask Group 183.jpg" alt="Los Angeles" width="100%">
+          <p class="tab-font-14">50 years with Scan-Group. The 50th anniversary was celebrated on the day itself with an internal gathering for present and former employees.</p>
             </div>
             </div>
           </div>
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-4 plr-7">
               <div class="slider-border">
-            <img src="assets/img/project/Mask Group 2.jpg" class="img-responsive">
-              <p  class="pt-14 tab-font-14 tab-pt-15">3 units RMQC from Port of Singapore to Port of Tanjung Priok, Indonesia</p>
+            <img src="assets/img/about/Mask Group 182.jpg" alt="Los Angeles" width="100%">
+          <p class="tab-font-14">Congratulating Joyce Ang on her 40th anniversary and thanking her for many years of invaluable contributions and dedication to the Group.</p>
             </div>
             </div>
           </div>
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-4 plr-7">
                 <div class="slider-border">
-             <img src="assets/img/project/Mask Group 3.jpg" class="img-responsive">
-              <p  class="pt-14 tab-font-14 tab-pt-15">2 units RMQC from Port of Hong Kong to Port of Ho Chi Minh City, Vietnam</p></div>
+              <img src="assets/img/about/Mask Group 181 (2).jpg" alt="Los Angeles" width="100%">
+          <p class="tab-font-14">We congratulate Jesper Vedsted Pedersen on his 40th anniversary and thank him for his great efforts over the years. "Good Wind” forwards.</p>
+        </div>
           </div>
         </div>
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-4 plr-7">
               <div class="slider-border">
-              <img src="assets/img/project/Mask Group 4.jpg" class="img-responsive">
-        <p class="pt-14 tab-font-14 tab-pt-15">6 units RTGs & 6 units TT from Northport to Port of Kuching, Malaysia</p></div>
+              <img src="assets/img/about/Mask Group 183.jpg" alt="Los Angeles" width="100%">
+          <p class="tab-font-14">50 years with Scan-Group. The 50th anniversary was celebrated on the day itself with an internal gathering for present and former employees.</p>
+            </div>
           </div>
         </div>
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-4 plr-7">
                <div class="slider-border">
-              <img src="assets/img/project/Mask Group 5.jpg" class="img-responsive">
-        <p class="pt-14 tab-font-14 tab-pt-15">3 units RTGs from Port of Panjang, Indonesia to Port of Singapore</p></div>
+              <img src="assets/img/about/Mask Group 182.jpg" alt="Los Angeles" width="100%">
+          <p class="tab-font-14">Congratulating Joyce Ang on her 40th anniversary and thanking her for many years of invaluable contributions and dedication to the Group.</p>
+        </div>
           </div>
         </div>
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-4 plr-7">
                 <div class="slider-border">
-              <img src="assets/img/project/Mask Group 6.jpg" class="img-responsive">
-        <p class="pt-14 tab-font-14 tab-pt-15">5 units RTGs from Port of Hong Kong to Port of Kuching, Malaysia</p></div>
-          </div>
-        </div>
-    <div class="item">
-            <div class="col-xs-12 col-sm-6 col-md-4 plr-7">
-                <div class="slider-border">
-             <img src="assets/img/project/Mask Group 7.jpg" class="img-responsive">
-       <p class="pt-14 tab-font-14 tab-pt-15">8 units RTGs from Jurong Port, Singapore to Port of Tanjung Priok, Indonesia</p></div>
+              <img src="assets/img/about/Mask Group 181 (2).jpg" alt="Los Angeles" width="100%">
+          <p class="tab-font-14">We congratulate Jesper Vedsted Pedersen on his 40th anniversary and thank him for his great efforts over the years. "Good Wind” forwards.</p>
+            </div>
           </div>
         </div>
         </div>
-        <a class="left carousel-control top" href="#theCarousel" data-slide="prev"><img src="assets/img/icon/red arrow right.png" class="img-responsive" width="30%"></a>
-        <a class="right carousel-control top" href="#theCarousel" data-slide="next"><img src="assets/img/icon/red arrow.png" class="img-responsive" width="30%"></a>
+        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><img src="assets/img/icon/red arrow right.png" class="img-responsive" width="30%"></a>
+        <a class="right carousel-control" href="#theCarousel" data-slide="next"><img src="assets/img/icon/red arrow.png" class="img-responsive" width="30%"></a>
       </div>
     </div>
   </div>
@@ -287,17 +275,11 @@
 
    
       
-    </div>
- 
-</div>
-<!-- ****************** -->
+    </div></div>
 
 
 
-
-
-
-<!-- ************* -->
+    
 
 
 <section  class="footer-class" id="footer">
@@ -354,7 +336,6 @@
 
 
 
- <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
@@ -378,21 +359,33 @@
 <div class="col-md-9 pr-60 res-pr-16">
   <div class="row">
         <div class="col-md-6 col-xs-6">
-           <div id="datepicker31" class="input-group date " data-date-format="dd-mm-yyyy">
-            <input class="form-control border-right" type="text" readonly />
+          <!--  <div id="datepicker2" class="input-group date " data-date-format="dd-mm-yyyy" >
+           <div  class="input-group date " data-date-format="dd-mm-yyyy" >
+            <input class="form-control border-right" type="text"  readonly />
             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
             </div>
+          </div> -->
+
+          <input type="text" id="datepicker" name="weekPicker"> 
+ <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
         </div>
 
+
+
         <div class="col-md-6 col-xs-6 ml-25">
-         <div id="datepicker32" class="input-group date" data-date-format="dd-mm-yyyy">
-         <input class="form-control border-right" type="text" readonly />
+         <!-- <div id="datepicker3" class="input-group date" data-date-format="dd-mm-yyyy">
+         <input class="form-control border-right" type="text"  readonly />
          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-        </div>
+        </div> -->
+        <input type="text" id="datepicker2" name="weekPicker">
        </div>
+
      </div></div>
 
      </div>
+   
+
+
    
     <div class="row pt-20">
          <div class="col-md-3">
@@ -429,7 +422,8 @@
     </div>
   </div>
 
-    <div id="popup1" class="overlay">
+
+     <div id="popup1" class="overlay">
   <div class="popup">
    
     <a class="close popup-close" href="#">&times;</a>
@@ -501,8 +495,7 @@
   </div>
 </div>
 
-
- <div id="popup1" class="overlay">
+  <div id="popup1" class="overlay">
   <div class="popup">
    
     <a class="close popup-close" href="#">&times;</a>
@@ -573,25 +566,6 @@
     </div>
   </div>
 </div>
-
-
-<div id="light">
-  <!-- <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a> -->
-
-  <!-- <p class="pt-13 text-center popup-title">Delivery of 9 RMQC (STS) from India to Turkey</p> -->
- <!--  <video controls width="761px" height="430" class="case-study-video">
-  <source src="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.ogv" type="video/ogg" >
-  <source src="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" type="video/mp4">
-  Please <a href="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" download>download</a> the video.
-</video> -->
-  
-  <video controls id="" class="case-study-video"  controls preload="none" width="761px" height="430"data-setup="{}">
- <source src="assets/video/scan shipping main video resize.mp4" type='video/mp4' />
-</video>
-
- 
-</div>
-<div id="fade" onClick="lightbox_close();"></div>
 
 <div class="lightbox" id="lightbox-1">
 <div class="search-input">
@@ -601,32 +575,16 @@
 <a class="lightbox__close" href="#">X</a>
 </div>
 
+
  <style>
-     .product-dropdown {
-        display: inline-flex;
-        position: absolute;
-        left: auto;
-        right: 148px !important;
-        top: 110px;z-index: 999;
+  @media (min-width: 1920px) and (max-width: 2560px){ 
+    .verticals-dropdown {right: 435px !important;}
+    .product-dropdown {right: 435px !important;z-index: 999;}
   }
-   @media (min-width: 1920px) and (max-width: 2560px)  { .product-dropdown {right: 435px !important;
-    }}
   </style>
 
+
   <script type="text/javascript">
-      $( '.dropdown-2' ).hover(function() {
-        $('.product-dropdown').css("display","none");
-      },function(){ 
-        $('.product-dropdown').css("display","inline-flex");
-      });
-      
-  </script>
- 
-
-</body>
-</html>
-
-<script type="text/javascript">
   (function(){
       jQuery('#theCarousel').carousel();
 
@@ -661,35 +619,9 @@
 </script>
 
 
-<script type="text/javascript">
-  window.document.onkeydown = function(e) {
-  if (!e) {
-    e = event;
-  }
-  if (e.keyCode == 27) {
-    lightbox_close();
-  }
-}
-
-function lightbox_open() {
-  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-  window.scrollTo(0, 0);
-  document.getElementById('light').style.display = 'block';
-  document.getElementById('fade').style.display = 'block';
-  lightBoxVideo.play();
-}
-
-function lightbox_close() {
-  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-  document.getElementById('light').style.display = 'none';
-  document.getElementById('fade').style.display = 'none';
-  lightBoxVideo.pause();
-}
-</script>
 
 
-  
-    
-  </body>
+
+</body>
 </html>
 

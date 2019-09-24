@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +11,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src="assets/js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/defines.js"></script>
+    
+    <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/high-resolution.css">
-     <link rel="stylesheet" href="assets/css/login-popup.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+     <link rel="stylesheet" href="assets/css/high-resolution.css">
+    <link rel="stylesheet" href="assets/css/login-popup.css">
+<link rel="stylesheet" href="assets/css/news-event-slider.css">
+
 </head>
 <body>
 
@@ -34,28 +40,30 @@
 
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" >
 
-     <div class="primary-menu text-right">
-       <!--  <li class=""><a class="" href="News-&-Events.html"><img src="assets/img/news.png" class="pr-17 tab-pr-10 res-p-0" >NEWS</a></li> -->
+     <div class="primary-menu text-right ">
+      <!--  <li class=""><a class="" href="News-&-Events.html"><img src="assets/img/news.png" class="pr-17 tab-pr-10 res-p-0" >NEWS</a></li> -->
           <li class="res-p-0"><a  class="res-p-0" href="location.html"><img src="assets/img/Path 1634.png" class="pr-17 tab-pr-10 res-p-0" >LOCATIONS</a></li>
           <li class=""><a href="careers.html" class=" res-plr-c"> CAREERS</a></li>
           <li><a href="#popup1" class="login-btn res-ml-4">Login</a><a href="#lightbox-1"><img src="assets/img/Path 208.png" class="pl-17 tab-pl-10 res-pl-9" ></a> </li>
         </div>
         
-     
+
 
       <ul class="nav navbar-nav navbar-right res-mt-60">
         <li>
           <a href="about.html">ABOUT</a>
         </li>
-        
-       <li class="dropdown dropdown-1 active res-dis-none desk-dropdown">
+
+    
+
+  <li class="dropdown dropdown-1 active res-dis-none desk-dropdown">
      <a href="index.html">PRODUCTS & SERVICES</a>
           <ul class="dropdown-menu product-dropdown desk-dropdown-menu">
           <li><a href="ocean-Freight.html">Ocean</a></li>
           <li><a href="air.html">Air</a></li>
           <li><a href="road.html">Road </a></li>
           <li><a href="project-1.html">Projects </a></li>
-          <li class="active"><a href="Warehousing.html">Warehousing </a></li>
+          <li><a href="Warehousing.html">Warehousing </a></li>
           <li><a href="Value-added-services.html">Value Added Services</a></li>
           </ul>
         </li>
@@ -63,21 +71,24 @@
        
 
          <li class="dropdown dropdown-2  res-dis-none desk-dropdown">
-          <a href="Verticals.html">VERTICALS</a>
+          <a href="Verticals.html">VERTICALS<b class="caret" aria-expanded="false"></b></a>
           <ul class="dropdown-menu verticals-dropdown desk-dropdown-menu">
             <li><a href="food-&-bevrage-1.html">Food & Beverage</a></li>
           <li><a href="Aid-&-Relief.html">Aid & Relief</a></li>
           <li><a href="Marine-logistics.html">Marine Logistics</a></li>
-        <!--   <li><a href="Pharma-Logistics.html">Pharma Logistics</a></li> -->
+      <!--     <li><a href="Pharma-Logistics.html">Pharma Logistics</a></li> -->
           <li><a href="AOG-Aerospace.html">AOG/Aerospace</a></li>
           </ul>
         </li>
 
 
+
+
+   
+
         <li class="dropdown mobile-dropdown dis-none res-display">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS & SERVICES </a>
           <ul class="dropdown-menu mobile-menu">
-          
           <li><a href="ocean-Freight.html">Ocean</a></li>
           <li><a href="air.html">Air</a></li>
           <li><a href="road.html">Road</a></li>
@@ -94,7 +105,7 @@
           <li><a href="food-&-bevrage-1.html">Food & Beverage</a></li>
           <li><a href="Aid-&-Relief.html">Aid & Relief</a></li>
           <li><a href="Marine-logistics.html">Marine Logistics</a></li>
-      <!--     <li><a href="Pharma-Logistics.html">Pharma Logistics</a></li> -->
+       <!--    <li><a href="Pharma-Logistics.html">Pharma Logistics</a></li> -->
           <li><a href="AOG-Aerospace.html">AOG/Aerospace</a></li>
           </ul>
         </li>
@@ -106,7 +117,7 @@
           <a href="app.html">APPS</a>
         </li>
         <li class="border-remove">
-         <a class="hidden-xs home-img" href="product-and-services-landing-page.html"></a>
+        <a class="hidden-xs home-img" href="product-and-services-landing-page.html"></a>
           <a class="visible-xs res-pt-20" href="product-and-services-landing-page.html"><img src="assets/img/icon/Group 3191.png"></a>
         </li>
       </ul>
@@ -114,80 +125,207 @@
   </div>
 </header>
 
+
+
+
 <!-- *********************************-->
-<section class="pb-30 ">
+<!-- <section class="pb-30 ">
+<div class="container-fluid plr-none " >
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+    <ol class="carousel-indicators">
+      <li class="fill" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li  class="fill" data-target="#myCarousel" data-slide-to="1"></li>
+      <li  class="fill" data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+
+    <div class="carousel-inner">
+
+      <div class="item active">
+    <div class="img-caption">
+        <div class="carousel-caption">
+          <h1>Small enough to know you.<br> Big enough to serve you!</h1>
+          <button type="button" class="btn btn-danger slider-btn" data-toggle="modal" data-target="#myModal">Sailing Schedule</button>
+        </div>
+      </div>
+      </div>
+
+      <div class="item">
+      <div class="img-caption">
+        <div class="carousel-caption">
+          <h1>Small enough to know you.<br> Big enough to serve you!</h1>
+          <button type="button" class="btn btn-danger slider-btn" data-toggle="modal" data-target="#myModal">Sailing Schedule</button>
+        </div>
+      </div>
+      </div>
+    
+      <div class="item">
+     <div class="img-caption">
+        <div class="carousel-caption">
+          <h1>Small enough to know you.<br> Big enough to serve you!</h1>
+          <button type="button" class="btn btn-danger slider-btn" data-toggle="modal" data-target="#myModal">Sailing Schedule</button>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+
+   
+    <a class="left carousel-control dis-none" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control dis-none" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</section> -->
+
+<section class="ptb-30 ">
   <div class="container-fluid plr-none" >
      
-     <div class="banner-caption">
-      <div class="banner-text text-center">
-          <h1>PRODUCTS & SERVICES</h1>
-          <h2>Small enough to know you.<br> Big enough to serve you!</h2>
+     <div class="img-caption res-height-180">
+      <div class="carousel-caption1 text-center">
+       
+          <h1 class="ps-head">Small enough to know you.<br> Big enough to serve you!</h1>
           <button type="button" class="btn btn-danger banner-btn" data-toggle="modal" data-target="#myModal">Sailing Schedule</button>
         </div>
       </div>
+
+<section class="pt-30">
+  <div class="container-fluid pt-30">
+    <div class="container">
+      <div class="row about">
+       <p>In today’s marketplace we all look to save both time and money by using the best business solutions available.<br>
+         Scan-Shipping helps you to achieve this by providing a ‘one stop’ full-service solution designed to fulfill all your transport and logistic needs. Using experience,
+         innovation and commitment, Scan-Shipping offers a range of products and services designed to complement and enhance your business.
+         No matter the size and type of cargo, we have the skills and know-how to provide you with cost-effective solutions around the world and around the clock.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid pt-30">
+    <div class="container tab-pl-60">
+      <div class="row prdt-ser-img">
+        <div class="col-md-6 plr-7 ">
+          <h3>Ocean</h3>
+           
+          <img src="assets/img/pixel.png" alt="Los Angeles"  width="100%" class=" img-fluid">
+          <a href="ocean-Freight.html"><button type="button"  class="btn btn-danger read-more">Read More</button></a>
+          
+        </div>
+
+        <div class="col-md-6 plr-7">
+          <h3>Air</h3>
+          <img src="assets/img/EMPLOYEE_Kathleen Morgante_plane-landing-at-dusk_Slide 1D.png" alt="Los Angeles"  width="100%" class=" img-fluid">
+          <a href="air.html"><button type="button" class="btn btn-danger read-more">Read More</button></a>
+        </div>
+
+      </div>
+
+      
+
+      <div class="row prdt-ser-img">
+        <div class="col-md-6 plr-7">
+          <h3>Road</h3>
+          <img src="assets/img/PEXELS_Kelly Lacy_road-between-trees-2519392.png" alt="Los Angeles"  width="100%" class="img-fluid">
+          <a href="road.html"><button type="button" class="btn btn-danger read-more">Read More</button></a>
+        </div>
+
+        <div class="col-md-6 plr-7">
+          <h3>Warehousing</h3>
+          <img src="assets/img/EMPLOYEE_Kathleen Morgante_warehouse_Slide 5A.png" alt="Los Angeles"  width="100%" class=" img-fluid">
+          <a href="Warehousing.html"><button type="button" class="btn btn-danger read-more">Read More</button></a>
+        </div>
+
+      </div>
+
+      <div class="row prdt-ser-img">
+        <div class="col-md-6 plr-7">
+          <h3>Projects</h3>
+          <img src="assets/img/EMPLOYEE_fromKathleen Morgante_breakbulk-lifted-onto-ship_Slide 6C.png" alt="Los Angeles"  width="100%" class=" img-fluid">
+          <a href="project-1.html"><button type="button" class="btn btn-danger read-more">Read More</button></a>
+        </div>
+
+        <div class="col-md-6 plr-7">
+          <h3>Value Added Services</h3>
+          <img src="assets/img/value-services/iStock-507243723_xj4fy0.jpg" alt="Los Angeles"  width="100%" class=" img-fluid" height="340px">
+         <a href="Value-added-services.html" ><button type="button" class="btn btn-danger read-more">Read More</button></a>
+        </div>
+
+      </div>
+
+
+  
+    </div>
   </div>
 </section>
 
 
-<!-- *********************************-->
-<section class="pt-10 res-pb-0">
+
+
+
+
+
+<section class="pb-10">
 <div class="container-fluid">
-  
-    <div class="row road plr-32">
-      <div class="col-md-6 plr-7">
-         <img src="assets/img/ware/EMPLOYEE_fromAndersJohansen_brochure_Singapore-LLC-warehouse.jpg" alt="Los Angeles" width="100%"  class="res-height img-fluid">
-      </div>
-      <div class="col-md-6 plr-7 res-pt-15 body-font-p">
-        <h2 class="tab-font-38 tittle">Warehousing</h2>
-         <p>Our global network of state-of-the-art facilities cater to the simple and more complex needs of our clientele. </p>
-        <p>Whether you require trans-landing, short- or long-term storage, freight tracking, labelling and/or distribution, or have a more complex project requiring specialized equipment, packing and crating, we have the expertise to pair your needs with the optimal solution.
-      </div>
-
    
-  </div>
-</div>
-
-<div class="container-fluid pt-30 res-pt-15 ">
-  
-    <div class="row Warehousing plr-32 body-font-p">
-      <div class="col-md-4 res-pt-10">
-        <div class="line">
-        <h4>Loading and Unloading</h4>
-        <p>Container </p>
-        <p>Special equipment (FR/OT) Lashing,</p>
-        <p> Securing and Dunnage</p>
-        </div>
-      </div>
-      <div class="col-md-4 res-pt-10 ">
-        <div class="line">
-        <h4>Pick and Pack Services</h4>
-        <h5>Picking</h5>
-        <p class="wa-line-hight"> Small or large units  </p>
-        <p class="wa-line-hight">Pallets or Cartons</p>
-
-        <h5 class="pt-13">Packing</h5>
-        <p class="wa-line-hight"> Palletizing and/or Crating </p>
-        <p class="wa-line-hight">Labelling </p>
-        <p class="wa-line-hight">Fumigation </p>
-       
-        </div>
-      </div>
-      <div class="col-md-4 res-pt-10">
-        <div class="line">
-        <h4>Domestic Distribution Services</h4>
-        <p>Small packages  </p>
-        <p>Pallets </p>
-        <p> Part Loads or Full Loads</p>
-        <p> Daily service or as per client needs</p>
-        </div>
-      </div>
-
+  <div class="row news-event pt-15  ">
     
+
+  <h3>NEWS & EVENTS</h3>
+      <div class="carousel slide multi-item-carousel plr-24" id="theCarousel">
+        <div class="carousel-inner">
+          <div class="item active">
+             <div class="col-md-12 pt-8 ">
+
+        <div class="col-md-6 col-xs-12 p-0">
+
+      <img src="assets/img/EMPLOYEE_fromErik Soerensen_container-lifted-off-truckbed_IMG_8825.png" alt="Los Angeles" width="100%"  class="img-fluid">    
+        </div>
+        <div class="col-md-6 col-xs-12 bg-black p-0">
+         <p>May 2019</p><br class="res-dis-none">
+          <p>Proud to be the logistic partner of the Norwegian Sailing Team. Container loaded in Oslo with destination Yokohama, for several months of training towards the Olympic Games in Japan 2020.</p><br class="res-dis-none">
+          <p> Scan-Shipping har gitt Norges Seilforbund en container som vil være et nyttig hjelpemiddel frem mot OL.</p><br class="res-dis-none">
+          <p> Les mer,<a href = "https://lnkd.in/dY9W74R" target="_blank"><span class="red-clr"> https://lnkd.in/dY9W74R</span></a></p>
+        </div>
+      </div>
+          </div>
+          <div class="item">
+             <div class="col-md-12  pt-8 ">
+
+        <div class="col-md-6 col-xs-12 p-0">
+
+      <img src="assets/img/news2.png" alt="Los Angeles" width="100%"  class="img-fluid">    
+        </div>
+        <div class="col-md-6  col-xs-12 bg-black p-0">
+          <p>September 2019</p><br class="res-dis-none">
+          <p>The Norwegian Sailing Team’s container arrives in Japan and Olympic Trials begin in Enoshima. The team meets with school children from Fujisawa City who have made posters to decorate the container and cheer them on.</p><br class="res-dis-none">
+          <p> Japanske skolebarn møtte landslaget. </p><br class="res-dis-none">
+          <p> Les mer,<a href = "https://lnkd.in/dkkcazM" target="_blank"><span class="red-clr"> https://lnkd.in/dkkcazM</span></a></p>
+        </div>
+      </div>
+          </div>
+       
+          <!-- add  more items here -->
+          <!-- Example item start:  -->
+          
+         
+          <!--  Example item end -->
+        </div>
+        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><img src="assets/img/icon/red arrow right.png" class="img-responsive left-img" width="14px"></a>
+        <a class="right carousel-control" href="#theCarousel" data-slide="next"><img src="assets/img/icon/red arrow.png" class="img-responsive right-img" width="14px"></a>
+      </div>
+  
   </div>
 </div>
 </section>
-
-
 
 <section  class="footer-class" id="footer">
   <div class="container-fluid">
@@ -264,24 +402,24 @@
         <label>Cut off date: </label>
         </div>
 
-        <div class="col-md-9 pr-60 res-pr-16">
+<div class="col-md-9 pr-60 res-pr-16">
   <div class="row">
-
         <div class="col-md-6 col-xs-6">
-           <div id="datepicker39" class="input-group date " data-date-format="dd-mm-yyyy">
+           <div id="datepicker29" class="input-group date " data-date-format="dd-mm-yyyy">
             <input class="form-control border-right" type="text" readonly />
             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
             </div>
         </div>
 
         <div class="col-md-6 col-xs-6 ml-25">
-         <div id="datepicker40" class="input-group date" data-date-format="dd-mm-yyyy">
+         <div id="datepicker30" class="input-group date" data-date-format="dd-mm-yyyy">
          <input class="form-control border-right" type="text" readonly />
          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
         </div>
        </div>
-     </div></div>
+    </div>
 
+</div>
      </div>
    
     <div class="row pt-20">
@@ -318,8 +456,8 @@
       
     </div>
   </div>
-
-    <div id="popup1" class="overlay">
+      
+   <div id="popup1" class="overlay">
   <div class="popup">
    
     <a class="close popup-close" href="#">&times;</a>
@@ -398,17 +536,20 @@
 </div>
 <a class="lightbox__close" href="#">X</a>
 </div>
-
-   <style>
+    
+    
+  <style>
      .product-dropdown {
         display: inline-flex;
         position: absolute;
         left: auto;
         right: 148px !important;
-        top: 110px;z-index: 999;
+        top: 110px;
+        z-index: 0;
   }
-   @media (min-width: 1920px) and (max-width: 2560px)  { .product-dropdown {right: 435px !important;
-    }}
+   @media (min-width: 1920px) and (max-width: 2560px)  { 
+    .product-dropdown {right: 435px !important;}
+  }
   </style>
 
   <script type="text/javascript">
@@ -420,6 +561,69 @@
       
   </script>
 
+  <script type="text/javascript">
+  (function(){
+      jQuery('#theCarousel').carousel();
+
+      }());
+
+      (function(){
+        jQuery('.carousel-showmanymoveone .item').each(function(){
+          var itemToClone = jQuery(this);
+
+          for (var i=1;i<2;i++) {
+            itemToClone = itemToClone.next();
+
+            // wrap around if at end of item collection
+            if (!itemToClone.length) {
+              itemToClone = jQuery(this).siblings(':first');
+            }
+
+            // grab item, clone, add marker class, add to collection
+            itemToClone.children(':first-child').clone()
+              .addClass("cloneditem-"+(i))
+              .appendTo(jQuery(this));
+          }
+        });
+    }());
+    
+(function() {
+  jQuery('.carousel-showmanymoveone').carousel({
+      interval: false
+  }); 
+}());
+
+</script>
+
+<script type="text/javascript">
+  // Instantiate the Bootstrap carousel
+$('.multi-item-carousel').carousel({
+  interval: false
+});
+
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
+$('.multi-item-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  // next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    // next.next().children(':first-child').clone().appendTo($(this));
+  } else {
+    // $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+</script>
 
 </body>
 </html>
+
+
+
+
+
+
+

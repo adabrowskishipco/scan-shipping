@@ -31,7 +31,7 @@
         <span class="icon-bar"></span>
       </button>
     
-       <a href="product-and-services-landing-page.html"><img src="assets/img/Scan_Shipping_RGB.png" class="nav-logo" width="83%"></a>
+       <a href="index.html"><img src="assets/img/Scan_Shipping_RGB.png" class="nav-logo" width="83%"></a>
     </div>
 
    
@@ -52,7 +52,7 @@
         </li>
         
         <li class="dropdown  res-dis-none desk-dropdown">
-     <a href="product-and-services-landing-page.html">PRODUCTS & SERVICES<b class=""></b></a>
+     <a href="index.html">PRODUCTS & SERVICES</a>
           <ul class="dropdown-menu product-dropdown  desk-dropdown-menu">
           <li><a href="ocean-Freight.html">Ocean</a></li>
           <li><a href="air.html">Air</a></li>
@@ -324,15 +324,19 @@
 <div class="col-md-9 pr-60 res-pr-16">
   <div class="row">
         <div class="col-md-6 col-xs-6">
-           <div id="datepicker2" class="input-group date " data-date-format="dd-mm-yyyy">
-            <input class="form-control border-right" type="text" readonly />
+           <div id="datepicker2" class="input-group date " data-date-format="dd-mm-yyyy" >
+           <div  class="input-group date " data-date-format="dd-mm-yyyy" >
+            <input class="form-control border-right" type="text"  readonly />
             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
             </div>
+          </div>
         </div>
+
+
 
         <div class="col-md-6 col-xs-6 ml-25">
          <div id="datepicker3" class="input-group date" data-date-format="dd-mm-yyyy">
-         <input class="form-control border-right" type="text" readonly />
+         <input class="form-control border-right" type="text"  readonly />
          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
         </div>
        </div>
@@ -340,6 +344,9 @@
      </div></div>
 
      </div>
+   
+
+
    
     <div class="row pt-20">
          <div class="col-md-3">
@@ -573,21 +580,60 @@
 </script>
 
 <script type="text/javascript">
-    $(function() {
-  $("#datepicker2").datepicker({
-    showWeek: true,
-    firstDay: 1,
-    maxDate: 'today',
-    beforeShow: function(elem, ui) {
-      $(ui.dpDiv).on('click', 'tbody .ui-datepicker-week-col', function() {
-        $(elem).val('Week ' + $(this).text()).datepicker( "hide" );
-      });
-    }
-  });
+ $(function() {
+
+
+
+$("#weekno").datepicker({
+
+showAnim:'slideDown',
+
+showButtonPanel: true,
+
+numberOfMonths: 3,
+
+showWeek: true
+
 });
+
+
+
+$(function() {
+
+
+
+$("#weekno").datepicker("option", "onSelect",
+
+        function(value, date)
+
+        { var week=$.datepicker.iso8601Week (
+
+                new Date(date.selectedYear,
+
+                        date.selectedMonth,
+
+                        date.selectedDay));
+
+         $(this).val(date.selectedYear+'-week-'+(week<10?'0':'')+week);
+
+         
+
+       }
+
+ );
+
+
+
+});
+
+});
+
+
 </script>
 
-
+<!-- <input type="text" id="weekno" name="weekno" accesskey="" style="position:absolute; left:528px; top:291px; width:192px;" class="hasDatepicker">
+ -->
 
 </body>
 </html>
+
