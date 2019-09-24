@@ -579,60 +579,7 @@
 
 </script>
 
-<script type="text/javascript">
- $(function() {
 
-
-
-$("#weekno").datepicker({
-
-showAnim:'slideDown',
-
-showButtonPanel: true,
-
-numberOfMonths: 3,
-
-showWeek: true
-
-});
-
-
-
-$(function() {
-
-
-
-$("#weekno").datepicker("option", "onSelect",
-
-        function(value, date)
-
-        { var week=$.datepicker.iso8601Week (
-
-                new Date(date.selectedYear,
-
-                        date.selectedMonth,
-
-                        date.selectedDay));
-
-         $(this).val(date.selectedYear+'-week-'+(week<10?'0':'')+week);
-
-         
-
-       }
-
- );
-
-
-
-});
-
-});
-
-
-</script>
-
-<!-- <input type="text" id="weekno" name="weekno" accesskey="" style="position:absolute; left:528px; top:291px; width:192px;" class="hasDatepicker">
- -->
 
 </body>
 </html>

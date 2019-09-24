@@ -9,6 +9,7 @@
 }
 .datepicker-switch{text-align: center;}
 .table-condensed .year{font-size: 11px;padding: 0px 3px;display: -webkit-inline-box;}
+.table-condensed  .cw{font-weight: 900;}
 
 body {
   margin: 0px;
@@ -597,7 +598,7 @@ font-weight: 600;
     font-size: 15px;
     padding: 61px 53px !important;
     font-weight: 300;
-    height: 378px;
+    height: 380px;
 }
 .p-0{
   padding:0px;
@@ -674,7 +675,7 @@ font-weight: 600;
 }
 .about-banner-caption {
   
-/**/    background: linear-gradient(rgba(0,0,0,.39), rgba(0,0,0,.39)), url("../img/about/aboutimagebw.jpg");
+/**/    background: linear-gradient(rgba(0,0,0,.39), rgba(0,0,0,.39)), url("../img/about/aboutimagebw1.jpg");
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -829,7 +830,7 @@ background: url("../img/marine/Group 2701.jpg");
 }
   
 .about-banner-caption:hover{
-   background-image: url("../img/about/aboutimage.jpg") !important;
+   background-image: url("../img/about/aboutimage1.jpg") !important;
 }
 
 .news-banner-caption:hover{
@@ -1340,7 +1341,7 @@ background: #fff;
 }*/
 .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
     padding: 4px;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 .datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top{
@@ -1557,6 +1558,15 @@ hr.big-divider {
     text-align: center;
     font-size: 12px;
   }
+  .index-va{
+        height: 253px !important;
+  }
+  .carousel-caption1 {
+    top: 66% !important;
+  }
+  .ps-head {
+    font-size: 50px !important;}
+
   .bg-black {
     font-size: 11px;
     padding: 36px 50px !important;
@@ -1577,6 +1587,9 @@ hr.big-divider {
     font-size: 71px !important;
     font-weight: 650 !important;
     color: #fff;
+}
+.tab-height{
+  height: 473px !important;
 }
 
   .tab-display-none{
@@ -1731,6 +1744,16 @@ hr.big-divider {
     font-weight: 600;
     line-height: 25px;
 }
+
+.lightbox {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 137px;
+    left: 37%;
+    transition: all 0.8s ease;
+    width: 73%;
+  }
 
 .carousel-caption1 {
     top: 21%;
@@ -2269,6 +2292,12 @@ select::-ms-expand { background-color: transparent; border: none; }
     left: 44% !important;
   }
 
+  .right-img {
+    
+    left: 165px  !important;
+    
+}
+
   }
 
   @media (min-width: 1440px) and (max-width:1800px){ 
@@ -2296,5 +2325,10 @@ select::-ms-expand { background-color: transparent; border: none; }
     top: 36%;
     position: absolute;
     left: 18%;
+}
+.right-img {
+    position: absolute;
+    left: 189px  !important;
+    top: 50%;
 }
   }
